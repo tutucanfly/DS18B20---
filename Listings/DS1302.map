@@ -1,0 +1,1873 @@
+LX51 LINKER/LOCATER V4.66.100.0                                                         11/12/2024  16:30:50  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.100.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\LX51.EXE .\Objects\main.obj, .\Objects\onewire.obj, .\Objects\ds1302.obj TO .\Objects\DS1302 PRINT (.
+>> \Listings\DS1302.map)
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\main.obj (MAIN)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\Objects\onewire.obj (ONEWIRE)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  .\Objects\ds1302.obj (DS1302)
+         COMMENT TYPE 0: C51 V9.60.7.0
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?LMUL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?ULDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?LSHL)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?LLDIDATA)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C?LSTIDATA)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  .\Objects\DS1302 (MAIN)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   00074DH   CODE
+I:000000H   I:000000H   I:00007FH   00004DH   DATA
+C:000000H   C:000000H   C:00FFFFH   00002EH   CONST
+I:000020H.0 I:000020H.0 I:00002FH.7 000000H.1 BIT
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  .\Objects\DS1302 (MAIN)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   00000EH   000007H   BYTE   UNIT     DATA           _DATA_GROUP_
+00000FH.0 00001FH.7 000011H.0 ---    ---      **GAP**
+000020H.0 000020H.0 000000H.1 BIT    UNIT     BIT            _BIT_GROUP_
+000020H.1 000020H   000000H.7 ---    ---      **GAP**
+000021H   00005EH   00003EH   BYTE   UNIT     DATA           ?DT?MAIN
+00005FH   00005FH   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00000AH   000008H   ---    ---      **GAP**
+00000BH   00000DH   000003H   BYTE   OFFS..   CODE           ?MAIN?0000B
+00000EH   000155H   000148H   BYTE   UNIT     CODE           ?C?LIB_CODE
+000156H   0001F1H   00009CH   BYTE   UNIT     CODE           ?PR?DISPLAY_TEMP?MAIN
+0001F2H   000282H   000091H   BYTE   UNIT     CODE           ?PR?DISPLAY_TIME?MAIN
+000283H   000310H   00008EH   BYTE   UNIT     CODE           ?PR?READTEMP?MAIN
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 2
+
+
+000311H   00039CH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+00039DH   000422H   000086H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+000423H   00047EH   00005CH   BYTE   UNIT     CODE           ?C_INITSEG
+00047FH   0004CAH   00004CH   BYTE   UNIT     CODE           ?PR?DISPLAY_TIMESPACE?MAIN
+0004CBH   000513H   000049H   BYTE   UNIT     CODE           ?PR?BUTTONMODE2?MAIN
+000514H   000552H   00003FH   BYTE   UNIT     CODE           ?PR?_SELECTHC573?MAIN
+000553H   000590H   00003EH   BYTE   UNIT     CODE           ?PR?BUTTONMODE1?MAIN
+000591H   0005C4H   000034H   BYTE   UNIT     CODE           ?PR?_DELAY?MAIN
+0005C5H   0005F8H   000034H   BYTE   UNIT     CODE           ?PR?_READ_DS1302_BYTE?DS1302
+0005F9H   000625H   00002DH   BYTE   UNIT     CODE           ?PR?INITDS1302?MAIN
+000626H   00064CH   000027H   BYTE   UNIT     CODE           ?PR?TIMER0?MAIN
+00064DH   000673H   000027H   BYTE   UNIT     CODE           ?PR?INIT_DS18B20?ONEWIRE
+000674H   000693H   000020H   BYTE   UNIT     CODE           ?PR?READDS1302?MAIN
+000694H   0006B1H   00001EH   BYTE   UNIT     CODE           ?PR?_SMGDISPLAY?MAIN
+0006B2H   0006CFH   00001EH   BYTE   UNIT     CODE           ?PR?_WRITE_DS18B20?ONEWIRE
+0006D0H   0006E9H   00001AH   BYTE   UNIT     CODE           ?PR?_DELAY_ONEWIRE?ONEWIRE
+0006EAH   000703H   00001AH   BYTE   UNIT     CODE           ?PR?READ_DS18B20?ONEWIRE
+000704H   000717H   000014H   BYTE   UNIT     CODE           ?PR?_WRITE_DS1302_BYTE?DS1302
+000718H   00072AH   000013H   BYTE   UNIT     CODE           ?PR?_WRITE_DS1302?DS1302
+00072BH   00073AH   000010H   BYTE   UNIT     CODE           ?PR?INITTIMER0?MAIN
+00073BH   000748H   00000EH   BYTE   UNIT     CODE           ?PR?INITSYSTEM?MAIN
+000749H   000754H   00000CH   BYTE   UNIT     CODE           ?PR?TIMECHANGEMONITOR?MAIN
+000755H   000782H   00002EH   BYTE   UNIT     CONST          ?CO?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\DS1302 (MAIN)
+
+
+FUNCTION/MODULE                 BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE     START  STOP  START  STOP
+=======================================================
+TIMER0/MAIN                    ----- -----  ----- -----
+
+*** NEW ROOT *****************
+
+?C_C51STARTUP                  ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                      ----- -----  0008H 0008H
+  +--> INITSYSTEM/MAIN
+  +--> BUTTONMODE1/MAIN
+  +--> DISPLAY_TIMESPACE/MAIN
+  +--> INITDS1302/MAIN
+  +--> _SELECTHC573/MAIN
+  +--> DISPLAY_TEMP/MAIN
+  +--> BUTTONMODE2/MAIN
+  +--> TIMECHANGEMONITOR/MAIN
+  +--> DISPLAY_TIME/MAIN
+  +--> READDS1302/MAIN
+  +--> READTEMP/MAIN
+
+INITSYSTEM/MAIN                ----- -----  ----- -----
+  +--> _SELECTHC573/MAIN
+  +--> INITTIMER0/MAIN
+
+_SELECTHC573/MAIN              ----- -----  ----- -----
+
+INITTIMER0/MAIN                ----- -----  ----- -----
+
+BUTTONMODE1/MAIN               ----- -----  ----- -----
+  +--> DISPLAY_TIMESPACE/MAIN
+
+DISPLAY_TIMESPACE/MAIN         ----- -----  ----- -----
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 3
+
+
+  +--> _DELAY/MAIN
+  +--> _SELECTHC573/MAIN
+
+_DELAY/MAIN                    ----- -----  ----- -----
+  +--> _SMGDISPLAY/MAIN
+
+_SMGDISPLAY/MAIN               ----- -----  ----- -----
+  +--> _SELECTHC573/MAIN
+
+INITDS1302/MAIN                ----- -----  0009H 0009H
+  +--> _WRITE_DS1302_BYTE/DS1302
+
+_WRITE_DS1302_BYTE/DS1302      ----- -----  ----- -----
+  +--> _WRITE_DS1302/DS1302
+
+_WRITE_DS1302/DS1302           ----- -----  ----- -----
+
+DISPLAY_TEMP/MAIN              ----- -----  ----- -----
+  +--> _DELAY/MAIN
+  +--> _SELECTHC573/MAIN
+
+BUTTONMODE2/MAIN               ----- -----  ----- -----
+  +--> DISPLAY_TEMP/MAIN
+
+TIMECHANGEMONITOR/MAIN         ----- -----  ----- -----
+
+DISPLAY_TIME/MAIN              ----- -----  ----- -----
+  +--> _DELAY/MAIN
+  +--> _SMGDISPLAY/MAIN
+  +--> _SELECTHC573/MAIN
+
+READDS1302/MAIN                ----- -----  0009H 0009H
+  +--> _READ_DS1302_BYTE/DS1302
+
+_READ_DS1302_BYTE/DS1302       ----- -----  ----- -----
+  +--> _WRITE_DS1302/DS1302
+
+READTEMP/MAIN                  ----- -----  0009H 000EH
+  +--> INIT_DS18B20/ONEWIRE
+  +--> _WRITE_DS18B20/ONEWIRE
+  +--> _DELAY/MAIN
+  +--> READ_DS18B20/ONEWIRE
+
+INIT_DS18B20/ONEWIRE           20H.0 20H.0  ----- -----
+  +--> _DELAY_ONEWIRE/ONEWIRE
+
+_DELAY_ONEWIRE/ONEWIRE         ----- -----  ----- -----
+
+_WRITE_DS18B20/ONEWIRE         ----- -----  ----- -----
+  +--> _DELAY_ONEWIRE/ONEWIRE
+
+READ_DS18B20/ONEWIRE           ----- -----  ----- -----
+  +--> _DELAY_ONEWIRE/ONEWIRE
+
+?C_INITSEG                     ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  .\Objects\DS1302 (MAIN)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      0100013EH   CODE     ---       ?C?LLDIDATA
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 4
+
+
+      0100000EH   CODE     ---       ?C?LMUL
+      0100012BH   CODE     ---       ?C?LSHL
+      0100014AH   CODE     ---       ?C?LSTIDATA
+      01000099H   CODE     ---       ?C?ULDIV
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000358H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      010005BAH   CODE     ---       _delay
+      010006D4H   CODE     ---       _Delay_OneWire
+      010005C5H   CODE     ---       _Read_Ds1302_Byte
+      01000520H   CODE     ---       _SelectHC573
+      01000694H   CODE     ---       _smgDisplay
+      01000718H   CODE     ---       _Write_Ds1302
+      01000704H   CODE     ---       _Write_Ds1302_Byte
+      010006B2H   CODE     ---       _Write_DS18B20
+*SFR* 000000D0H.6 DATA     BIT       AC
+*SFR* 000000E0H   DATA     BYTE      ACC
+*SFR* 000000BCH   DATA     BYTE      ADC_CONTR
+*SFR* 000000BDH   DATA     BYTE      ADC_RES
+*SFR* 000000BEH   DATA     BYTE      ADC_RESL
+*SFR* 0000008EH   DATA     BYTE      AUXR
+*SFR* 000000A2H   DATA     BYTE      AUXR1
+*SFR* 000000F0H   DATA     BYTE      B
+*SFR* 000000A1H   DATA     BYTE      BUS_SPEED
+      01000553H   CODE     ---       buttonMode1
+      010004CBH   CODE     ---       buttonMode2
+*SFR* 000000FAH   DATA     BYTE      CCAP0H
+*SFR* 000000EAH   DATA     BYTE      CCAP0L
+*SFR* 000000FBH   DATA     BYTE      CCAP1H
+*SFR* 000000EBH   DATA     BYTE      CCAP1L
+*SFR* 000000FCH   DATA     BYTE      CCAP2H
+*SFR* 000000ECH   DATA     BYTE      CCAP2L
+*SFR* 000000DAH   DATA     BYTE      CCAPM0
+*SFR* 000000DBH   DATA     BYTE      CCAPM1
+*SFR* 000000DCH   DATA     BYTE      CCAPM2
+*SFR* 000000D8H.0 DATA     BIT       CCF0
+*SFR* 000000D8H.1 DATA     BIT       CCF1
+*SFR* 000000D8H.2 DATA     BIT       CCF2
+*SFR* 000000D8H   DATA     BYTE      CCON
+*SFR* 000000D8H.7 DATA     BIT       CF
+*SFR* 000000F9H   DATA     BYTE      CH
+*SFR* 000000E9H   DATA     BYTE      CL
+*SFR* 00000097H   DATA     BYTE      CLK_DIV
+*SFR* 000000D9H   DATA     BYTE      CMOD
+*SFR* 000000E6H   DATA     BYTE      CMPCR1
+*SFR* 000000E7H   DATA     BYTE      CMPCR2
+      00000034H   DATA     BYTE      countTen
+*SFR* 000000D8H.6 DATA     BIT       CR
+*SFR* 000000D0H.7 DATA     BIT       CY
+      01000156H   CODE     ---       Display_temp
+      010001F2H   CODE     ---       Display_time
+      0100047FH   CODE     ---       Display_timeSpace
+*SFR* 00000083H   DATA     BYTE      DPH
+*SFR* 00000082H   DATA     BYTE      DPL
+*SFR* 00000090H.4 DATA     BIT       DQ
+      0100077CH   CONST    ---       DS1302_Read
+      01000775H   CONST    ---       DS1302_Write
+*SFR* 000000A8H.7 DATA     BIT       EA
+*SFR* 000000A8H.5 DATA     BIT       EADC
+*SFR* 000000A8H.6 DATA     BIT       ELVD
+*SFR* 000000A8H.4 DATA     BIT       ES
+*SFR* 000000A8H.1 DATA     BIT       ET0
+*SFR* 000000A8H.3 DATA     BIT       ET1
+*SFR* 000000A8H.0 DATA     BIT       EX0
+*SFR* 000000A8H.2 DATA     BIT       EX1
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 5
+
+
+*SFR* 000000D0H.5 DATA     BIT       F0
+*SFR* 000000D0H.1 DATA     BIT       F1
+      0000005EH   DATA     BYTE      firstRun
+      00000022H   DATA     BYTE      flagSwitch
+*SFR* 000000C3H   DATA     BYTE      IAP_ADDRH
+*SFR* 000000C4H   DATA     BYTE      IAP_ADDRL
+*SFR* 000000C5H   DATA     BYTE      IAP_CMD
+*SFR* 000000C7H   DATA     BYTE      IAP_CONTR
+*SFR* 000000C2H   DATA     BYTE      IAP_DATA
+*SFR* 000000C6H   DATA     BYTE      IAP_TRIG
+*SFR* 000000A8H   DATA     BYTE      IE
+*SFR* 00000088H.1 DATA     BIT       IE0
+*SFR* 00000088H.3 DATA     BIT       IE1
+*SFR* 000000AFH   DATA     BYTE      IE2
+      00000023H   DATA     BYTE      index
+      0100064DH   CODE     ---       init_ds18b20
+      010005F9H   CODE     ---       InitDS1302
+      0100073BH   CODE     ---       InitSystem
+      0100072BH   CODE     ---       InitTimer0
+*SFR* 000000B0H.2 DATA     BIT       INT0
+*SFR* 000000B0H.3 DATA     BIT       INT1
+*SFR* 0000008FH   DATA     BYTE      INT_CLKO
+*SFR* 000000B8H   DATA     BYTE      IP
+*SFR* 000000B5H   DATA     BYTE      IP2
+*SFR* 00000088H.0 DATA     BIT       IT0
+*SFR* 00000088H.2 DATA     BIT       IT1
+      0100039DH   CODE     ---       main
+*SFR* 000000D0H.2 DATA     BIT       OV
+*SFR* 000000D0H.0 DATA     BIT       P
+*SFR* 00000080H   DATA     BYTE      P0
+*SFR* 00000080H.0 DATA     BIT       P00
+*SFR* 00000080H.1 DATA     BIT       P01
+*SFR* 00000080H.2 DATA     BIT       P02
+*SFR* 00000080H.3 DATA     BIT       P03
+*SFR* 00000080H.4 DATA     BIT       P04
+*SFR* 00000080H.5 DATA     BIT       P05
+*SFR* 00000080H.6 DATA     BIT       P06
+*SFR* 00000080H.7 DATA     BIT       P07
+*SFR* 00000094H   DATA     BYTE      P0M0
+*SFR* 00000093H   DATA     BYTE      P0M1
+*SFR* 00000090H   DATA     BYTE      P1
+*SFR* 00000090H.0 DATA     BIT       P10
+*SFR* 00000090H.1 DATA     BIT       P11
+*SFR* 00000090H.2 DATA     BIT       P12
+*SFR* 00000090H.3 DATA     BIT       P13
+*SFR* 00000090H.4 DATA     BIT       P14
+*SFR* 00000090H.5 DATA     BIT       P15
+*SFR* 00000090H.6 DATA     BIT       P16
+*SFR* 00000090H.7 DATA     BIT       P17
+*SFR* 0000009DH   DATA     BYTE      P1ASF
+*SFR* 00000092H   DATA     BYTE      P1M0
+*SFR* 00000091H   DATA     BYTE      P1M1
+*SFR* 000000A0H   DATA     BYTE      P2
+*SFR* 000000A0H.0 DATA     BIT       P20
+*SFR* 000000A0H.1 DATA     BIT       P21
+*SFR* 000000A0H.2 DATA     BIT       P22
+*SFR* 000000A0H.3 DATA     BIT       P23
+*SFR* 000000A0H.4 DATA     BIT       P24
+*SFR* 000000A0H.5 DATA     BIT       P25
+*SFR* 000000A0H.6 DATA     BIT       P26
+*SFR* 000000A0H.7 DATA     BIT       P27
+*SFR* 00000096H   DATA     BYTE      P2M0
+*SFR* 00000095H   DATA     BYTE      P2M1
+*SFR* 000000B0H   DATA     BYTE      P3
+*SFR* 000000B0H.0 DATA     BIT       P30
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 6
+
+
+*SFR* 000000B0H.1 DATA     BIT       P31
+*SFR* 000000B0H.2 DATA     BIT       P32
+*SFR* 000000B0H.3 DATA     BIT       P33
+*SFR* 000000B0H.4 DATA     BIT       P34
+*SFR* 000000B0H.5 DATA     BIT       P35
+*SFR* 000000B0H.6 DATA     BIT       P36
+*SFR* 000000B0H.7 DATA     BIT       P37
+*SFR* 000000B2H   DATA     BYTE      P3M0
+*SFR* 000000B1H   DATA     BYTE      P3M1
+*SFR* 000000C0H   DATA     BYTE      P4
+*SFR* 000000C0H.0 DATA     BIT       P40
+*SFR* 000000C0H.1 DATA     BIT       P41
+*SFR* 000000C0H.2 DATA     BIT       P42
+*SFR* 000000C0H.3 DATA     BIT       P43
+*SFR* 000000C0H.4 DATA     BIT       P44
+*SFR* 000000C0H.5 DATA     BIT       P45
+*SFR* 000000C0H.6 DATA     BIT       P46
+*SFR* 000000C0H.7 DATA     BIT       P47
+*SFR* 000000B4H   DATA     BYTE      P4M0
+*SFR* 000000B3H   DATA     BYTE      P4M1
+*SFR* 000000C8H   DATA     BYTE      P5
+*SFR* 000000C8H.0 DATA     BIT       P50
+*SFR* 000000C8H.1 DATA     BIT       P51
+*SFR* 000000C8H.2 DATA     BIT       P52
+*SFR* 000000C8H.3 DATA     BIT       P53
+*SFR* 000000C8H.4 DATA     BIT       P54
+*SFR* 000000C8H.5 DATA     BIT       P55
+*SFR* 000000C8H.6 DATA     BIT       P56
+*SFR* 000000C8H.7 DATA     BIT       P57
+*SFR* 000000CAH   DATA     BYTE      P5M0
+*SFR* 000000C9H   DATA     BYTE      P5M1
+*SFR* 000000E8H   DATA     BYTE      P6
+*SFR* 000000E8H.0 DATA     BIT       P60
+*SFR* 000000E8H.1 DATA     BIT       P61
+*SFR* 000000E8H.2 DATA     BIT       P62
+*SFR* 000000E8H.3 DATA     BIT       P63
+*SFR* 000000E8H.4 DATA     BIT       P64
+*SFR* 000000E8H.5 DATA     BIT       P65
+*SFR* 000000E8H.6 DATA     BIT       P66
+*SFR* 000000E8H.7 DATA     BIT       P67
+*SFR* 000000CCH   DATA     BYTE      P6M0
+*SFR* 000000CBH   DATA     BYTE      P6M1
+*SFR* 000000F8H   DATA     BYTE      P7
+*SFR* 000000F8H.0 DATA     BIT       P70
+*SFR* 000000F8H.1 DATA     BIT       P71
+*SFR* 000000F8H.2 DATA     BIT       P72
+*SFR* 000000F8H.3 DATA     BIT       P73
+*SFR* 000000F8H.4 DATA     BIT       P74
+*SFR* 000000F8H.5 DATA     BIT       P75
+*SFR* 000000F8H.6 DATA     BIT       P76
+*SFR* 000000F8H.7 DATA     BIT       P77
+*SFR* 000000E2H   DATA     BYTE      P7M0
+*SFR* 000000E1H   DATA     BYTE      P7M1
+*SFR* 000000A2H   DATA     BYTE      P_SW1
+*SFR* 000000BAH   DATA     BYTE      P_SW2
+*SFR* 000000B8H.5 DATA     BIT       PADC
+*SFR* 000000F2H   DATA     BYTE      PCA_PWM0
+*SFR* 000000F3H   DATA     BYTE      PCA_PWM1
+*SFR* 000000F4H   DATA     BYTE      PCA_PWM2
+*SFR* 00000087H   DATA     BYTE      PCON
+*SFR* 000000B8H.6 DATA     BIT       PLVD
+*SFR* 000000B8H.7 DATA     BIT       PPCA
+*SFR* 000000B8H.4 DATA     BIT       PS
+*SFR* 000000D0H   DATA     BYTE      PSW
+*SFR* 000000B8H.1 DATA     BIT       PT0
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 7
+
+
+*SFR* 000000B8H.3 DATA     BIT       PT1
+*SFR* 000000F1H   DATA     BYTE      PWMCFG
+*SFR* 000000F5H   DATA     BYTE      PWMCR
+*SFR* 000000F7H   DATA     BYTE      PWMFDCR
+*SFR* 000000F6H   DATA     BYTE      PWMIF
+*SFR* 000000B8H.0 DATA     BIT       PX0
+*SFR* 000000B8H.2 DATA     BIT       PX1
+*SFR* 000000B0H.0 DATA     BIT       R1
+*SFR* 000000B0H.1 DATA     BIT       R2
+*SFR* 000000B0H.2 DATA     BIT       R3
+*SFR* 000000B0H.3 DATA     BIT       R4
+*SFR* 00000098H.2 DATA     BIT       RB8
+*SFR* 000000B0H.7 DATA     BIT       RD
+      010006EAH   CODE     ---       Read_DS18B20
+      01000674H   CODE     ---       ReadDS1302
+      01000283H   CODE     ---       ReadTemp
+*SFR* 00000098H.4 DATA     BIT       REN
+*SFR* 00000098H.0 DATA     BIT       RI
+*SFR* 000000D0H.3 DATA     BIT       RS0
+*SFR* 000000D0H.4 DATA     BIT       RS1
+*SFR* 00000090H.3 DATA     BIT       RST
+*SFR* 000000B0H.0 DATA     BIT       RXD
+*SFR* 0000009BH   DATA     BYTE      S2BUF
+*SFR* 0000009AH   DATA     BYTE      S2CON
+*SFR* 000000ADH   DATA     BYTE      S3BUF
+*SFR* 000000ACH   DATA     BYTE      S3CON
+*SFR* 00000085H   DATA     BYTE      S4BUF
+*SFR* 00000084H   DATA     BYTE      S4CON
+*SFR* 000000A9H   DATA     BYTE      SADDR
+*SFR* 000000B9H   DATA     BYTE      SADEN
+*SFR* 00000099H   DATA     BYTE      SBUF
+*SFR* 00000090H.7 DATA     BIT       SCK
+*SFR* 00000098H   DATA     BYTE      SCON
+*SFR* 000000A0H.3 DATA     BIT       SDA
+*SFR* 00000098H.7 DATA     BIT       SM0
+*SFR* 00000098H.6 DATA     BIT       SM1
+*SFR* 00000098H.5 DATA     BIT       SM2
+      00000026H   DATA     BYTE      smg_
+      01000765H   CONST    ---       SMG_Dot
+      01000755H   CONST    ---       SMG_NoDot
+*SFR* 00000081H   DATA     BYTE      SP
+      00000025H   DATA     BYTE      spaceTime
+      00000033H   DATA     BYTE      spaceTimeTemp
+*SFR* 000000CEH   DATA     BYTE      SPCTL
+*SFR* 000000CFH   DATA     BYTE      SPDAT
+*SFR* 000000CDH   DATA     BYTE      SPSTAT
+*SFR* 000000B0H.4 DATA     BIT       T0
+*SFR* 000000B0H.5 DATA     BIT       T1
+*SFR* 000000D6H   DATA     BYTE      T2H
+*SFR* 000000D7H   DATA     BYTE      T2L
+*SFR* 000000D4H   DATA     BYTE      T3H
+*SFR* 000000D5H   DATA     BYTE      T3L
+*SFR* 000000D1H   DATA     BYTE      T3T4M
+*SFR* 000000D2H   DATA     BYTE      T4H
+*SFR* 000000D3H   DATA     BYTE      T4L
+*SFR* 000000D1H   DATA     BYTE      T4T3M
+*SFR* 00000098H.3 DATA     BIT       TB8
+*SFR* 00000088H   DATA     BYTE      TCON
+      0000002FH   DATA     DWORD     temp
+      00000035H   DATA     ---       tempList
+*SFR* 00000088H.5 DATA     BIT       TF0
+*SFR* 00000088H.7 DATA     BIT       TF1
+*SFR* 0000008CH   DATA     BYTE      TH0
+*SFR* 0000008DH   DATA     BYTE      TH1
+*SFR* 000000D6H   DATA     BYTE      TH2
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 8
+
+
+*SFR* 000000D4H   DATA     BYTE      TH3
+*SFR* 000000D2H   DATA     BYTE      TH4
+*SFR* 00000098H.1 DATA     BIT       TI
+      00000028H   DATA     ---       time
+      01000749H   CODE     ---       TimeChangeMonitor
+      00000024H   DATA     BYTE      timeMonitor
+      00000027H   DATA     BYTE      timeMonitorCount
+      01000626H   CODE     ---       Timer0
+      0000005DH   DATA     BYTE      timer0Count
+*SFR* 0000008AH   DATA     BYTE      TL0
+*SFR* 0000008BH   DATA     BYTE      TL1
+*SFR* 000000D7H   DATA     BYTE      TL2
+*SFR* 000000D5H   DATA     BYTE      TL3
+*SFR* 000000D3H   DATA     BYTE      TL4
+*SFR* 00000089H   DATA     BYTE      TMOD
+*SFR* 00000088H.4 DATA     BIT       TR0
+*SFR* 00000088H.6 DATA     BIT       TR1
+*SFR* 000000B0H.1 DATA     BIT       TXD
+*SFR* 000000C1H   DATA     BYTE      WDT_CONTR
+*SFR* 000000ABH   DATA     BYTE      WKTCH
+*SFR* 000000AAH   DATA     BYTE      WKTCL
+      00000021H   DATA     BYTE      workingMode
+*SFR* 000000B0H.6 DATA     BIT       WR
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\DS1302 (MAIN)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       MAIN
+      0000005EH   PUBLIC    DATA     BYTE      firstRun
+      0000005DH   PUBLIC    DATA     BYTE      timer0Count
+      00000035H   PUBLIC    DATA     ---       tempList
+      00000034H   PUBLIC    DATA     BYTE      countTen
+      00000033H   PUBLIC    DATA     BYTE      spaceTimeTemp
+      0000002FH   PUBLIC    DATA     DWORD     temp
+      00000028H   PUBLIC    DATA     ---       time
+      00000027H   PUBLIC    DATA     BYTE      timeMonitorCount
+      00000026H   PUBLIC    DATA     BYTE      smg_
+      00000025H   PUBLIC    DATA     BYTE      spaceTime
+      00000024H   PUBLIC    DATA     BYTE      timeMonitor
+      00000023H   PUBLIC    DATA     BYTE      index
+      00000022H   PUBLIC    DATA     BYTE      flagSwitch
+      00000021H   PUBLIC    DATA     BYTE      workingMode
+      0100077CH   PUBLIC    CONST    ---       DS1302_Read
+      01000775H   PUBLIC    CONST    ---       DS1302_Write
+      01000765H   PUBLIC    CONST    ---       SMG_Dot
+      01000755H   PUBLIC    CONST    ---       SMG_NoDot
+      0100039DH   PUBLIC    CODE     ---       main
+      0100073BH   PUBLIC    CODE     ---       InitSystem
+      01000749H   PUBLIC    CODE     ---       TimeChangeMonitor
+      010004CBH   PUBLIC    CODE     ---       buttonMode2
+      01000553H   PUBLIC    CODE     ---       buttonMode1
+      01000156H   PUBLIC    CODE     ---       Display_temp
+      010001F2H   PUBLIC    CODE     ---       Display_time
+      0100047FH   PUBLIC    CODE     ---       Display_timeSpace
+      01000283H   PUBLIC    CODE     ---       ReadTemp
+      01000694H   PUBLIC    CODE     ---       _smgDisplay
+      01000674H   PUBLIC    CODE     ---       ReadDS1302
+      010005F9H   PUBLIC    CODE     ---       InitDS1302
+      01000520H   PUBLIC    CODE     ---       _SelectHC573
+      01000626H   PUBLIC    CODE     ---       Timer0
+      0100072BH   PUBLIC    CODE     ---       InitTimer0
+      010005BAH   PUBLIC    CODE     ---       _delay
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 9
+
+
+      000000D8H.2 SFRSYM    DATA     BIT       CCF2
+      00000093H   SFRSYM    DATA     BYTE      P0M1
+      00000092H   SFRSYM    DATA     BYTE      P1M0
+      00000096H   SFRSYM    DATA     BYTE      P2M0
+      00000091H   SFRSYM    DATA     BYTE      P1M1
+      00000080H   SFRSYM    DATA     BYTE      P0
+      000000B2H   SFRSYM    DATA     BYTE      P3M0
+      00000095H   SFRSYM    DATA     BYTE      P2M1
+      00000090H   SFRSYM    DATA     BYTE      P1
+      000000B4H   SFRSYM    DATA     BYTE      P4M0
+      000000B1H   SFRSYM    DATA     BYTE      P3M1
+      000000A0H   SFRSYM    DATA     BYTE      P2
+      000000B0H.0 SFRSYM    DATA     BIT       R1
+      000000CAH   SFRSYM    DATA     BYTE      P5M0
+      000000B3H   SFRSYM    DATA     BYTE      P4M1
+      000000B0H   SFRSYM    DATA     BYTE      P3
+      000000ABH   SFRSYM    DATA     BYTE      WKTCH
+      000000B0H.1 SFRSYM    DATA     BIT       R2
+      000000D0H.6 SFRSYM    DATA     BIT       AC
+      000000CCH   SFRSYM    DATA     BYTE      P6M0
+      000000C9H   SFRSYM    DATA     BYTE      P5M1
+      000000C0H   SFRSYM    DATA     BYTE      P4
+      000000B0H.4 SFRSYM    DATA     BIT       T0
+      000000B0H.2 SFRSYM    DATA     BIT       R3
+      000000F6H   SFRSYM    DATA     BYTE      PWMIF
+      000000E2H   SFRSYM    DATA     BYTE      P7M0
+      000000CBH   SFRSYM    DATA     BYTE      P6M1
+      000000C8H   SFRSYM    DATA     BYTE      P5
+      000000B0H.5 SFRSYM    DATA     BIT       T1
+      000000B0H.3 SFRSYM    DATA     BIT       R4
+      000000E8H   SFRSYM    DATA     BYTE      P6
+      000000E1H   SFRSYM    DATA     BYTE      P7M1
+      000000A8H.7 SFRSYM    DATA     BIT       EA
+      000000F8H   SFRSYM    DATA     BYTE      P7
+      000000AAH   SFRSYM    DATA     BYTE      WKTCL
+      000000CEH   SFRSYM    DATA     BYTE      SPCTL
+      000000D8H.7 SFRSYM    DATA     BIT       CF
+      000000F9H   SFRSYM    DATA     BYTE      CH
+      000000F5H   SFRSYM    DATA     BYTE      PWMCR
+      000000A2H   SFRSYM    DATA     BYTE      P_SW1
+      000000BAH   SFRSYM    DATA     BYTE      P_SW2
+      000000A8H.5 SFRSYM    DATA     BIT       EADC
+      000000A8H   SFRSYM    DATA     BYTE      IE
+      000000E9H   SFRSYM    DATA     BYTE      CL
+      000000C5H   SFRSYM    DATA     BYTE      IAP_CMD
+      000000FAH   SFRSYM    DATA     BYTE      CCAP0H
+      000000FBH   SFRSYM    DATA     BYTE      CCAP1H
+      000000FCH   SFRSYM    DATA     BYTE      CCAP2H
+      000000BDH   SFRSYM    DATA     BYTE      ADC_RES
+      000000EAH   SFRSYM    DATA     BYTE      CCAP0L
+      000000D8H.6 SFRSYM    DATA     BIT       CR
+      000000F7H   SFRSYM    DATA     BYTE      PWMFDCR
+      000000EBH   SFRSYM    DATA     BYTE      CCAP1L
+      000000DAH   SFRSYM    DATA     BYTE      CCAPM0
+      000000B0H.7 SFRSYM    DATA     BIT       RD
+      000000ECH   SFRSYM    DATA     BYTE      CCAP2L
+      000000DBH   SFRSYM    DATA     BYTE      CCAPM1
+      000000DCH   SFRSYM    DATA     BYTE      CCAPM2
+      000000A8H.4 SFRSYM    DATA     BIT       ES
+      000000B8H.5 SFRSYM    DATA     BIT       PADC
+      000000B8H   SFRSYM    DATA     BYTE      IP
+      00000098H.0 SFRSYM    DATA     BIT       RI
+      000000D0H.7 SFRSYM    DATA     BIT       CY
+      000000B0H.2 SFRSYM    DATA     BIT       INT0
+      000000B0H.3 SFRSYM    DATA     BIT       INT1
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 10
+
+
+      00000098H.1 SFRSYM    DATA     BIT       TI
+      00000097H   SFRSYM    DATA     BYTE      CLK_DIV
+      000000C3H   SFRSYM    DATA     BYTE      IAP_ADDRH
+      000000B8H.4 SFRSYM    DATA     BIT       PS
+      00000081H   SFRSYM    DATA     BYTE      SP
+      000000D9H   SFRSYM    DATA     BYTE      CMOD
+      000000D8H   SFRSYM    DATA     BYTE      CCON
+      000000C4H   SFRSYM    DATA     BYTE      IAP_ADDRL
+      000000D0H.2 SFRSYM    DATA     BIT       OV
+      000000B8H.7 SFRSYM    DATA     BIT       PPCA
+      000000E6H   SFRSYM    DATA     BYTE      CMPCR1
+      000000E7H   SFRSYM    DATA     BYTE      CMPCR2
+      000000B0H.6 SFRSYM    DATA     BIT       WR
+      000000A8H.6 SFRSYM    DATA     BIT       ELVD
+      00000080H.0 SFRSYM    DATA     BIT       P00
+      000000BCH   SFRSYM    DATA     BYTE      ADC_CONTR
+      00000099H   SFRSYM    DATA     BYTE      SBUF
+      00000090H.0 SFRSYM    DATA     BIT       P10
+      00000087H   SFRSYM    DATA     BYTE      PCON
+      00000080H.1 SFRSYM    DATA     BIT       P01
+      000000A0H.0 SFRSYM    DATA     BIT       P20
+      00000090H.1 SFRSYM    DATA     BIT       P11
+      00000080H.2 SFRSYM    DATA     BIT       P02
+      000000B0H.0 SFRSYM    DATA     BIT       P30
+      000000A0H.1 SFRSYM    DATA     BIT       P21
+      00000090H.2 SFRSYM    DATA     BIT       P12
+      00000080H.3 SFRSYM    DATA     BIT       P03
+      000000C0H.0 SFRSYM    DATA     BIT       P40
+      000000B0H.1 SFRSYM    DATA     BIT       P31
+      000000A0H.2 SFRSYM    DATA     BIT       P22
+      00000098H   SFRSYM    DATA     BYTE      SCON
+      00000090H.3 SFRSYM    DATA     BIT       P13
+      00000080H.4 SFRSYM    DATA     BIT       P04
+      000000C8H.0 SFRSYM    DATA     BIT       P50
+      000000C0H.1 SFRSYM    DATA     BIT       P41
+      000000B0H.2 SFRSYM    DATA     BIT       P32
+      000000A0H.3 SFRSYM    DATA     BIT       P23
+      00000090H.4 SFRSYM    DATA     BIT       P14
+      00000089H   SFRSYM    DATA     BYTE      TMOD
+      00000088H   SFRSYM    DATA     BYTE      TCON
+      00000080H.5 SFRSYM    DATA     BIT       P05
+      000000E8H.0 SFRSYM    DATA     BIT       P60
+      000000C8H.1 SFRSYM    DATA     BIT       P51
+      000000C0H.2 SFRSYM    DATA     BIT       P42
+      000000B0H.3 SFRSYM    DATA     BIT       P33
+      000000A0H.4 SFRSYM    DATA     BIT       P24
+      00000090H.5 SFRSYM    DATA     BIT       P15
+      00000080H.6 SFRSYM    DATA     BIT       P06
+      000000F8H.0 SFRSYM    DATA     BIT       P70
+      000000E8H.1 SFRSYM    DATA     BIT       P61
+      000000C8H.2 SFRSYM    DATA     BIT       P52
+      000000C0H.3 SFRSYM    DATA     BIT       P43
+      000000B8H.6 SFRSYM    DATA     BIT       PLVD
+      000000B0H.4 SFRSYM    DATA     BIT       P34
+      000000A0H.5 SFRSYM    DATA     BIT       P25
+      00000090H.6 SFRSYM    DATA     BIT       P16
+      00000080H.7 SFRSYM    DATA     BIT       P07
+      000000F8H.1 SFRSYM    DATA     BIT       P71
+      000000E8H.2 SFRSYM    DATA     BIT       P62
+      000000C8H.3 SFRSYM    DATA     BIT       P53
+      000000C0H.4 SFRSYM    DATA     BIT       P44
+      000000B0H.5 SFRSYM    DATA     BIT       P35
+      000000A0H.6 SFRSYM    DATA     BIT       P26
+      00000090H.7 SFRSYM    DATA     BIT       P17
+      000000F8H.2 SFRSYM    DATA     BIT       P72
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 11
+
+
+      000000E8H.3 SFRSYM    DATA     BIT       P63
+      000000C8H.4 SFRSYM    DATA     BIT       P54
+      000000C0H.5 SFRSYM    DATA     BIT       P45
+      000000B0H.6 SFRSYM    DATA     BIT       P36
+      000000A0H.7 SFRSYM    DATA     BIT       P27
+      000000F8H.3 SFRSYM    DATA     BIT       P73
+      000000E8H.4 SFRSYM    DATA     BIT       P64
+      000000C8H.5 SFRSYM    DATA     BIT       P55
+      000000C0H.6 SFRSYM    DATA     BIT       P46
+      000000B0H.7 SFRSYM    DATA     BIT       P37
+      000000F8H.4 SFRSYM    DATA     BIT       P74
+      000000E8H.5 SFRSYM    DATA     BIT       P65
+      000000C8H.6 SFRSYM    DATA     BIT       P56
+      000000C0H.7 SFRSYM    DATA     BIT       P47
+      000000F8H.5 SFRSYM    DATA     BIT       P75
+      000000E8H.6 SFRSYM    DATA     BIT       P66
+      000000C8H.7 SFRSYM    DATA     BIT       P57
+      000000F8H.6 SFRSYM    DATA     BIT       P76
+      000000E8H.7 SFRSYM    DATA     BIT       P67
+      000000F8H.7 SFRSYM    DATA     BIT       P77
+      000000A1H   SFRSYM    DATA     BYTE      BUS_SPEED
+      00000088H.1 SFRSYM    DATA     BIT       IE0
+      00000088H.3 SFRSYM    DATA     BIT       IE1
+      000000AFH   SFRSYM    DATA     BYTE      IE2
+      000000F0H   SFRSYM    DATA     BYTE      B
+      0000008EH   SFRSYM    DATA     BYTE      AUXR
+      000000C7H   SFRSYM    DATA     BYTE      IAP_CONTR
+      000000F1H   SFRSYM    DATA     BYTE      PWMCFG
+      000000E0H   SFRSYM    DATA     BYTE      ACC
+      000000A8H.1 SFRSYM    DATA     BIT       ET0
+      000000A8H.3 SFRSYM    DATA     BIT       ET1
+      00000088H.5 SFRSYM    DATA     BIT       TF0
+      000000B5H   SFRSYM    DATA     BYTE      IP2
+      00000088H.7 SFRSYM    DATA     BIT       TF1
+      00000098H.2 SFRSYM    DATA     BIT       RB8
+      0000008CH   SFRSYM    DATA     BYTE      TH0
+      000000A8H.0 SFRSYM    DATA     BIT       EX0
+      0000008DH   SFRSYM    DATA     BYTE      TH1
+      00000088H.0 SFRSYM    DATA     BIT       IT0
+      000000D6H   SFRSYM    DATA     BYTE      TH2
+      000000D6H   SFRSYM    DATA     BYTE      T2H
+      000000A8H.2 SFRSYM    DATA     BIT       EX1
+      00000098H.3 SFRSYM    DATA     BIT       TB8
+      00000088H.2 SFRSYM    DATA     BIT       IT1
+      000000D4H   SFRSYM    DATA     BYTE      TH3
+      000000D4H   SFRSYM    DATA     BYTE      T3H
+      000000D0H.0 SFRSYM    DATA     BIT       P
+      000000D2H   SFRSYM    DATA     BYTE      TH4
+      000000D2H   SFRSYM    DATA     BYTE      T4H
+      00000098H.7 SFRSYM    DATA     BIT       SM0
+      0000008AH   SFRSYM    DATA     BYTE      TL0
+      00000098H.6 SFRSYM    DATA     BIT       SM1
+      0000008BH   SFRSYM    DATA     BYTE      TL1
+      000000D7H   SFRSYM    DATA     BYTE      TL2
+      000000D7H   SFRSYM    DATA     BYTE      T2L
+      00000098H.5 SFRSYM    DATA     BIT       SM2
+      000000D5H   SFRSYM    DATA     BYTE      TL3
+      000000D5H   SFRSYM    DATA     BYTE      T3L
+      000000D3H   SFRSYM    DATA     BYTE      TL4
+      000000D3H   SFRSYM    DATA     BYTE      T4L
+      000000B8H.1 SFRSYM    DATA     BIT       PT0
+      000000D0H.3 SFRSYM    DATA     BIT       RS0
+      000000B8H.3 SFRSYM    DATA     BIT       PT1
+      000000D0H.4 SFRSYM    DATA     BIT       RS1
+      000000C2H   SFRSYM    DATA     BYTE      IAP_DATA
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 12
+
+
+      00000088H.4 SFRSYM    DATA     BIT       TR0
+      00000088H.6 SFRSYM    DATA     BIT       TR1
+      000000C1H   SFRSYM    DATA     BYTE      WDT_CONTR
+      000000B8H.0 SFRSYM    DATA     BIT       PX0
+      000000B8H.2 SFRSYM    DATA     BIT       PX1
+      000000F2H   SFRSYM    DATA     BYTE      PCA_PWM0
+      000000F3H   SFRSYM    DATA     BYTE      PCA_PWM1
+      000000F4H   SFRSYM    DATA     BYTE      PCA_PWM2
+      0000009DH   SFRSYM    DATA     BYTE      P1ASF
+      00000083H   SFRSYM    DATA     BYTE      DPH
+      000000D1H   SFRSYM    DATA     BYTE      T3T4M
+      000000D1H   SFRSYM    DATA     BYTE      T4T3M
+      000000BEH   SFRSYM    DATA     BYTE      ADC_RESL
+      00000082H   SFRSYM    DATA     BYTE      DPL
+      000000CDH   SFRSYM    DATA     BYTE      SPSTAT
+      0000009BH   SFRSYM    DATA     BYTE      S2BUF
+      000000ADH   SFRSYM    DATA     BYTE      S3BUF
+      00000098H.4 SFRSYM    DATA     BIT       REN
+      00000085H   SFRSYM    DATA     BYTE      S4BUF
+      0000009AH   SFRSYM    DATA     BYTE      S2CON
+      000000ACH   SFRSYM    DATA     BYTE      S3CON
+      00000084H   SFRSYM    DATA     BYTE      S4CON
+      000000B9H   SFRSYM    DATA     BYTE      SADEN
+      000000B0H.0 SFRSYM    DATA     BIT       RXD
+      000000A9H   SFRSYM    DATA     BYTE      SADDR
+      000000B0H.1 SFRSYM    DATA     BIT       TXD
+      000000C6H   SFRSYM    DATA     BYTE      IAP_TRIG
+      000000A2H   SFRSYM    DATA     BYTE      AUXR1
+      000000D0H.5 SFRSYM    DATA     BIT       F0
+      000000D0H.1 SFRSYM    DATA     BIT       F1
+      0000008FH   SFRSYM    DATA     BYTE      INT_CLKO
+      000000D0H   SFRSYM    DATA     BYTE      PSW
+      000000D8H.0 SFRSYM    DATA     BIT       CCF0
+      000000D8H.1 SFRSYM    DATA     BIT       CCF1
+      000000CFH   SFRSYM    DATA     BYTE      SPDAT
+      00000094H   SFRSYM    DATA     BYTE      P0M0
+
+      01000591H   BLOCK     CODE     VOID      LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010005BAH   BLOCK     CODE     ---       LVL=0
+      00000006H   SYMBOL    DATA     WORD      n
+      010005BAH   LINE      CODE     ---       #71
+      010005BAH   LINE      CODE     ---       #72
+      010005BAH   LINE      CODE     ---       #73
+      010005C4H   LINE      CODE     ---       #74
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100072BH   BLOCK     CODE     ---       LVL=0
+      0100072BH   LINE      CODE     ---       #76
+      0100072BH   LINE      CODE     ---       #77
+      0100072BH   LINE      CODE     ---       #78
+      0100072EH   LINE      CODE     ---       #79
+      01000731H   LINE      CODE     ---       #80
+      01000734H   LINE      CODE     ---       #81
+      01000736H   LINE      CODE     ---       #82
+      01000738H   LINE      CODE     ---       #83
+      0100073AH   LINE      CODE     ---       #84
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000626H   BLOCK     CODE     ---       LVL=0
+      01000626H   LINE      CODE     ---       #86
+      0100062AH   LINE      CODE     ---       #88
+      0100062DH   LINE      CODE     ---       #89
+      01000630H   LINE      CODE     ---       #90
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 13
+
+
+      01000632H   LINE      CODE     ---       #91
+      01000639H   LINE      CODE     ---       #92
+      01000639H   LINE      CODE     ---       #93
+      0100063CH   LINE      CODE     ---       #94
+      01000640H   LINE      CODE     ---       #95
+      01000640H   LINE      CODE     ---       #96
+      01000643H   LINE      CODE     ---       #97
+      01000645H   LINE      CODE     ---       #99
+      01000645H   LINE      CODE     ---       #100
+      01000648H   LINE      CODE     ---       #101
+      01000648H   LINE      CODE     ---       #102
+      01000648H   LINE      CODE     ---       #104
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000514H   BLOCK     CODE     VOID      LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000520H   BLOCK     CODE     ---       LVL=0
+      00000007H   SYMBOL    DATA     BYTE      n
+      01000520H   LINE      CODE     ---       #105
+      01000520H   LINE      CODE     ---       #106
+      01000520H   LINE      CODE     ---       #107
+      0100052FH   LINE      CODE     ---       #108
+      0100052FH   LINE      CODE     ---       #109
+      0100052FH   LINE      CODE     ---       #110
+      01000537H   LINE      CODE     ---       #111
+      01000538H   LINE      CODE     ---       #112
+      01000538H   LINE      CODE     ---       #113
+      01000540H   LINE      CODE     ---       #114
+      01000541H   LINE      CODE     ---       #115
+      01000541H   LINE      CODE     ---       #116
+      01000549H   LINE      CODE     ---       #117
+      0100054AH   LINE      CODE     ---       #118
+      0100054AH   LINE      CODE     ---       #119
+      01000552H   LINE      CODE     ---       #120
+      01000552H   LINE      CODE     ---       #121
+      01000552H   LINE      CODE     ---       #122
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010005F9H   BLOCK     CODE     ---       LVL=0
+      010005F9H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000009H   SYMBOL    DATA     BYTE      n
+      ---         BLOCKEND  ---      ---       LVL=1
+      010005F9H   LINE      CODE     ---       #124
+      010005F9H   LINE      CODE     ---       #125
+      010005F9H   LINE      CODE     ---       #126
+      010005FCH   LINE      CODE     ---       #127
+      01000602H   LINE      CODE     ---       #128
+      01000605H   LINE      CODE     ---       #129
+      01000605H   LINE      CODE     ---       #130
+      01000616H   LINE      CODE     ---       #131
+      0100061FH   LINE      CODE     ---       #132
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000674H   BLOCK     CODE     ---       LVL=0
+      01000674H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000009H   SYMBOL    DATA     BYTE      n
+      ---         BLOCKEND  ---      ---       LVL=1
+      01000674H   LINE      CODE     ---       #135
+      01000674H   LINE      CODE     ---       #136
+      01000674H   LINE      CODE     ---       #137
+      01000677H   LINE      CODE     ---       #138
+      01000679H   LINE      CODE     ---       #139
+      01000679H   LINE      CODE     ---       #140
+      0100068AH   LINE      CODE     ---       #141
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 14
+
+
+      01000693H   LINE      CODE     ---       #142
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000694H   BLOCK     CODE     ---       LVL=0
+      00000006H   SYMBOL    DATA     BYTE      m
+      00000005H   SYMBOL    DATA     BYTE      n
+      01000694H   LINE      CODE     ---       #144
+      01000696H   LINE      CODE     ---       #145
+      01000696H   LINE      CODE     ---       #146
+      0100069BH   LINE      CODE     ---       #147
+      010006AAH   LINE      CODE     ---       #148
+      010006AFH   LINE      CODE     ---       #149
+      010006B1H   LINE      CODE     ---       #150
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000283H   BLOCK     CODE     ---       LVL=0
+      01000283H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000009H   SYMBOL    DATA     BYTE      LSB
+      0000000AH   SYMBOL    DATA     BYTE      MSB
+      0000000BH   SYMBOL    DATA     DWORD     t
+      ---         BLOCKEND  ---      ---       LVL=1
+      01000283H   LINE      CODE     ---       #152
+      01000283H   LINE      CODE     ---       #153
+      01000283H   LINE      CODE     ---       #156
+      01000286H   LINE      CODE     ---       #157
+      0100028BH   LINE      CODE     ---       #158
+      01000290H   LINE      CODE     ---       #159
+      01000297H   LINE      CODE     ---       #160
+      0100029AH   LINE      CODE     ---       #162
+      0100029DH   LINE      CODE     ---       #163
+      010002A2H   LINE      CODE     ---       #164
+      010002A7H   LINE      CODE     ---       #165
+      010002ACH   LINE      CODE     ---       #166
+      010002B1H   LINE      CODE     ---       #167
+      010002B4H   LINE      CODE     ---       #169
+      010002BEH   LINE      CODE     ---       #170
+      010002E1H   LINE      CODE     ---       #171
+      010002EEH   LINE      CODE     ---       #172
+      010002EEH   LINE      CODE     ---       #173
+      01000308H   LINE      CODE     ---       #174
+      01000310H   LINE      CODE     ---       #175
+      01000310H   LINE      CODE     ---       #176
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100047FH   BLOCK     CODE     ---       LVL=0
+      0100047FH   LINE      CODE     ---       #178
+      0100047FH   LINE      CODE     ---       #179
+      0100047FH   LINE      CODE     ---       #180
+      01000482H   LINE      CODE     ---       #181
+      01000486H   LINE      CODE     ---       #182
+      01000489H   LINE      CODE     ---       #184
+      0100048CH   LINE      CODE     ---       #185
+      0100048EH   LINE      CODE     ---       #186
+      01000491H   LINE      CODE     ---       #188
+      01000494H   LINE      CODE     ---       #189
+      01000496H   LINE      CODE     ---       #190
+      01000499H   LINE      CODE     ---       #192
+      0100049CH   LINE      CODE     ---       #193
+      0100049CH   LINE      CODE     ---       #194
+      0100049CH   LINE      CODE     ---       #196
+      0100049CH   LINE      CODE     ---       #197
+      0100049CH   LINE      CODE     ---       #198
+      0100049CH   LINE      CODE     ---       #200
+      0100049CH   LINE      CODE     ---       #201
+      0100049CH   LINE      CODE     ---       #202
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 15
+
+
+      0100049FH   LINE      CODE     ---       #204
+      010004A2H   LINE      CODE     ---       #205
+      010004AFH   LINE      CODE     ---       #206
+      010004B2H   LINE      CODE     ---       #208
+      010004B5H   LINE      CODE     ---       #209
+      010004C1H   LINE      CODE     ---       #210
+      010004C4H   LINE      CODE     ---       #212
+      010004C4H   LINE      CODE     ---       #213
+      010004C4H   LINE      CODE     ---       #214
+      010004C4H   LINE      CODE     ---       #215
+      010004C7H   LINE      CODE     ---       #216
+      010004CAH   LINE      CODE     ---       #217
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010001F2H   BLOCK     CODE     ---       LVL=0
+      010001F2H   LINE      CODE     ---       #219
+      010001F2H   LINE      CODE     ---       #220
+      010001F2H   LINE      CODE     ---       #221
+      010001F5H   LINE      CODE     ---       #222
+      01000201H   LINE      CODE     ---       #223
+      01000204H   LINE      CODE     ---       #225
+      01000207H   LINE      CODE     ---       #226
+      0100020FH   LINE      CODE     ---       #227
+      01000212H   LINE      CODE     ---       #229
+      01000215H   LINE      CODE     ---       #230
+      01000219H   LINE      CODE     ---       #231
+      0100021DH   LINE      CODE     ---       #233
+      01000224H   LINE      CODE     ---       #234
+      01000227H   LINE      CODE     ---       #236
+      0100022AH   LINE      CODE     ---       #237
+      01000236H   LINE      CODE     ---       #238
+      01000239H   LINE      CODE     ---       #240
+      0100023CH   LINE      CODE     ---       #241
+      01000244H   LINE      CODE     ---       #242
+      01000247H   LINE      CODE     ---       #244
+      0100024AH   LINE      CODE     ---       #245
+      0100024EH   LINE      CODE     ---       #246
+      01000252H   LINE      CODE     ---       #248
+      01000259H   LINE      CODE     ---       #249
+      0100025CH   LINE      CODE     ---       #251
+      0100025FH   LINE      CODE     ---       #252
+      0100026BH   LINE      CODE     ---       #253
+      0100026EH   LINE      CODE     ---       #255
+      01000271H   LINE      CODE     ---       #256
+      01000279H   LINE      CODE     ---       #257
+      0100027CH   LINE      CODE     ---       #259
+      0100027CH   LINE      CODE     ---       #260
+      0100027CH   LINE      CODE     ---       #261
+      0100027CH   LINE      CODE     ---       #262
+      0100027FH   LINE      CODE     ---       #263
+      01000282H   LINE      CODE     ---       #264
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000156H   BLOCK     CODE     ---       LVL=0
+      01000156H   LINE      CODE     ---       #266
+      01000156H   LINE      CODE     ---       #267
+      01000156H   LINE      CODE     ---       #268
+      01000159H   LINE      CODE     ---       #269
+      0100015DH   LINE      CODE     ---       #270
+      01000160H   LINE      CODE     ---       #272
+      01000163H   LINE      CODE     ---       #273
+      0100016BH   LINE      CODE     ---       #274
+      0100016EH   LINE      CODE     ---       #276
+      01000171H   LINE      CODE     ---       #277
+      01000177H   LINE      CODE     ---       #278
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 16
+
+
+      0100017AH   LINE      CODE     ---       #280
+      0100017DH   LINE      CODE     ---       #281
+      0100017FH   LINE      CODE     ---       #282
+      0100017FH   LINE      CODE     ---       #284
+      0100017FH   LINE      CODE     ---       #285
+      0100017FH   LINE      CODE     ---       #286
+      0100017FH   LINE      CODE     ---       #288
+      0100017FH   LINE      CODE     ---       #289
+      0100017FH   LINE      CODE     ---       #290
+      01000182H   LINE      CODE     ---       #292
+      01000185H   LINE      CODE     ---       #293
+      010001B4H   LINE      CODE     ---       #294
+      010001B7H   LINE      CODE     ---       #296
+      010001BAH   LINE      CODE     ---       #297
+      010001E8H   LINE      CODE     ---       #298
+      010001EBH   LINE      CODE     ---       #300
+      010001EBH   LINE      CODE     ---       #301
+      010001EBH   LINE      CODE     ---       #302
+      010001EBH   LINE      CODE     ---       #303
+      010001EEH   LINE      CODE     ---       #304
+      010001F1H   LINE      CODE     ---       #305
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000553H   BLOCK     CODE     ---       LVL=0
+      01000553H   LINE      CODE     ---       #307
+      01000553H   LINE      CODE     ---       #308
+      01000553H   LINE      CODE     ---       #310
+      01000556H   LINE      CODE     ---       #311
+      01000556H   LINE      CODE     ---       #312
+      01000559H   LINE      CODE     ---       #313
+      01000559H   LINE      CODE     ---       #314
+      0100055CH   LINE      CODE     ---       #315
+      0100055EH   LINE      CODE     ---       #317
+      01000563H   LINE      CODE     ---       #318
+      01000563H   LINE      CODE     ---       #319
+      01000566H   LINE      CODE     ---       #320
+      01000568H   LINE      CODE     ---       #321
+      0100056DH   LINE      CODE     ---       #322
+      0100056DH   LINE      CODE     ---       #323
+      01000570H   LINE      CODE     ---       #324
+      01000572H   LINE      CODE     ---       #325
+      01000577H   LINE      CODE     ---       #326
+      01000577H   LINE      CODE     ---       #327
+      0100057AH   LINE      CODE     ---       #328
+      0100057CH   LINE      CODE     ---       #330
+      0100057CH   LINE      CODE     ---       #331
+      0100057FH   LINE      CODE     ---       #332
+      0100057FH   LINE      CODE     ---       #333
+      0100057FH   LINE      CODE     ---       #335
+      01000582H   LINE      CODE     ---       #336
+      01000582H   LINE      CODE     ---       #337
+      01000585H   LINE      CODE     ---       #338
+      01000585H   LINE      CODE     ---       #339
+      01000588H   LINE      CODE     ---       #340
+      0100058AH   LINE      CODE     ---       #341
+      0100058DH   LINE      CODE     ---       #342
+      01000590H   LINE      CODE     ---       #343
+      01000590H   LINE      CODE     ---       #344
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010004CBH   BLOCK     CODE     ---       LVL=0
+      010004CBH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     BYTE      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      010004CBH   LINE      CODE     ---       #346
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 17
+
+
+      010004CBH   LINE      CODE     ---       #347
+      010004CBH   LINE      CODE     ---       #349
+      010004CEH   LINE      CODE     ---       #350
+      010004CEH   LINE      CODE     ---       #351
+      010004D1H   LINE      CODE     ---       #352
+      010004D1H   LINE      CODE     ---       #353
+      010004D4H   LINE      CODE     ---       #354
+      010004D6H   LINE      CODE     ---       #355
+      010004DAH   LINE      CODE     ---       #356
+      010004DAH   LINE      CODE     ---       #357
+      010004DDH   LINE      CODE     ---       #358
+      010004DFH   LINE      CODE     ---       #360
+      010004DFH   LINE      CODE     ---       #361
+      010004E1H   LINE      CODE     ---       #362
+      010004E8H   LINE      CODE     ---       #363
+      010004E8H   LINE      CODE     ---       #364
+      010004EBH   LINE      CODE     ---       #365
+      010004EBH   LINE      CODE     ---       #366
+      010004EBH   LINE      CODE     ---       #367
+      010004EBH   LINE      CODE     ---       #368
+      010004EEH   LINE      CODE     ---       #369
+      010004EEH   LINE      CODE     ---       #370
+      010004F1H   LINE      CODE     ---       #371
+      010004F1H   LINE      CODE     ---       #372
+      010004F4H   LINE      CODE     ---       #373
+      010004F6H   LINE      CODE     ---       #374
+      010004F9H   LINE      CODE     ---       #375
+      010004F9H   LINE      CODE     ---       #376
+      010004F9H   LINE      CODE     ---       #377
+      01000502H   LINE      CODE     ---       #378
+      01000502H   LINE      CODE     ---       #379
+      01000505H   LINE      CODE     ---       #380
+      01000507H   LINE      CODE     ---       #381
+      01000509H   LINE      CODE     ---       #382
+      0100050BH   LINE      CODE     ---       #383
+      0100050DH   LINE      CODE     ---       #384
+      01000513H   LINE      CODE     ---       #385
+      01000513H   LINE      CODE     ---       #386
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000749H   BLOCK     CODE     ---       LVL=0
+      01000749H   LINE      CODE     ---       #388
+      01000749H   LINE      CODE     ---       #389
+      01000749H   LINE      CODE     ---       #390
+      0100074FH   LINE      CODE     ---       #391
+      0100074FH   LINE      CODE     ---       #392
+      01000752H   LINE      CODE     ---       #393
+      01000754H   LINE      CODE     ---       #394
+      01000754H   LINE      CODE     ---       #395
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100073BH   BLOCK     CODE     ---       LVL=0
+      0100073BH   LINE      CODE     ---       #397
+      0100073BH   LINE      CODE     ---       #398
+      0100073BH   LINE      CODE     ---       #399
+      0100073DH   LINE      CODE     ---       #400
+      0100073DH   LINE      CODE     ---       #401
+      01000740H   LINE      CODE     ---       #402
+      01000743H   LINE      CODE     ---       #403
+      01000746H   LINE      CODE     ---       #404
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100039DH   BLOCK     CODE     ---       LVL=0
+      0100039DH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000008H   SYMBOL    DATA     BYTE      memory
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 18
+
+
+      ---         BLOCKEND  ---      ---       LVL=1
+      0100039DH   LINE      CODE     ---       #407
+      0100039DH   LINE      CODE     ---       #408
+      0100039DH   LINE      CODE     ---       #410
+      010003A0H   LINE      CODE     ---       #411
+      010003A0H   LINE      CODE     ---       #412
+      010003A0H   LINE      CODE     ---       #413
+      010003A4H   LINE      CODE     ---       #414
+      010003A4H   LINE      CODE     ---       #415
+      010003A7H   LINE      CODE     ---       #416
+      010003AAH   LINE      CODE     ---       #417
+      010003ACH   LINE      CODE     ---       #418
+      010003B1H   LINE      CODE     ---       #419
+      010003B1H   LINE      CODE     ---       #420
+      010003B5H   LINE      CODE     ---       #421
+      010003B5H   LINE      CODE     ---       #422
+      010003B8H   LINE      CODE     ---       #423
+      010003BBH   LINE      CODE     ---       #424
+      010003BBH   LINE      CODE     ---       #426
+      010003C2H   LINE      CODE     ---       #427
+      010003C2H   LINE      CODE     ---       #429
+      010003CAH   LINE      CODE     ---       #430
+      010003CAH   LINE      CODE     ---       #431
+      010003CDH   LINE      CODE     ---       #432
+      010003D2H   LINE      CODE     ---       #433
+      010003D5H   LINE      CODE     ---       #434
+      010003D5H   LINE      CODE     ---       #435
+      010003D7H   LINE      CODE     ---       #437
+      010003D7H   LINE      CODE     ---       #438
+      010003DAH   LINE      CODE     ---       #439
+      010003DFH   LINE      CODE     ---       #440
+      010003E7H   LINE      CODE     ---       #441
+      010003EAH   LINE      CODE     ---       #442
+      010003EAH   LINE      CODE     ---       #443
+      010003EDH   LINE      CODE     ---       #444
+      010003F0H   LINE      CODE     ---       #445
+      010003F2H   LINE      CODE     ---       #447
+      010003F2H   LINE      CODE     ---       #448
+      010003F9H   LINE      CODE     ---       #449
+      010003F9H   LINE      CODE     ---       #450
+      010003FCH   LINE      CODE     ---       #452
+      01000410H   LINE      CODE     ---       #453
+      01000412H   LINE      CODE     ---       #454
+      01000414H   LINE      CODE     ---       #456
+      01000414H   LINE      CODE     ---       #457
+      01000417H   LINE      CODE     ---       #458
+      01000417H   LINE      CODE     ---       #459
+      0100041AH   LINE      CODE     ---       #460
+      0100041DH   LINE      CODE     ---       #461
+      01000420H   LINE      CODE     ---       #462
+      01000420H   LINE      CODE     ---       #463
+      01000420H   LINE      CODE     ---       #464
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ONEWIRE
+      0100064DH   PUBLIC    CODE     ---       init_ds18b20
+      010006EAH   PUBLIC    CODE     ---       Read_DS18B20
+      010006B2H   PUBLIC    CODE     ---       _Write_DS18B20
+      010006D4H   PUBLIC    CODE     ---       _Delay_OneWire
+      000000D8H.2 SFRSYM    DATA     BIT       CCF2
+      00000093H   SFRSYM    DATA     BYTE      P0M1
+      00000092H   SFRSYM    DATA     BYTE      P1M0
+      00000096H   SFRSYM    DATA     BYTE      P2M0
+      00000091H   SFRSYM    DATA     BYTE      P1M1
+      00000080H   SFRSYM    DATA     BYTE      P0
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 19
+
+
+      000000B2H   SFRSYM    DATA     BYTE      P3M0
+      00000095H   SFRSYM    DATA     BYTE      P2M1
+      00000090H   SFRSYM    DATA     BYTE      P1
+      000000B4H   SFRSYM    DATA     BYTE      P4M0
+      000000B1H   SFRSYM    DATA     BYTE      P3M1
+      000000A0H   SFRSYM    DATA     BYTE      P2
+      000000CAH   SFRSYM    DATA     BYTE      P5M0
+      000000B3H   SFRSYM    DATA     BYTE      P4M1
+      000000B0H   SFRSYM    DATA     BYTE      P3
+      000000ABH   SFRSYM    DATA     BYTE      WKTCH
+      000000D0H.6 SFRSYM    DATA     BIT       AC
+      000000CCH   SFRSYM    DATA     BYTE      P6M0
+      000000C9H   SFRSYM    DATA     BYTE      P5M1
+      000000C0H   SFRSYM    DATA     BYTE      P4
+      000000B0H.4 SFRSYM    DATA     BIT       T0
+      000000F6H   SFRSYM    DATA     BYTE      PWMIF
+      000000E2H   SFRSYM    DATA     BYTE      P7M0
+      000000CBH   SFRSYM    DATA     BYTE      P6M1
+      000000C8H   SFRSYM    DATA     BYTE      P5
+      000000B0H.5 SFRSYM    DATA     BIT       T1
+      000000E8H   SFRSYM    DATA     BYTE      P6
+      000000E1H   SFRSYM    DATA     BYTE      P7M1
+      000000A8H.7 SFRSYM    DATA     BIT       EA
+      000000F8H   SFRSYM    DATA     BYTE      P7
+      000000AAH   SFRSYM    DATA     BYTE      WKTCL
+      000000CEH   SFRSYM    DATA     BYTE      SPCTL
+      000000D8H.7 SFRSYM    DATA     BIT       CF
+      000000F9H   SFRSYM    DATA     BYTE      CH
+      000000F5H   SFRSYM    DATA     BYTE      PWMCR
+      000000A2H   SFRSYM    DATA     BYTE      P_SW1
+      000000BAH   SFRSYM    DATA     BYTE      P_SW2
+      000000A8H.5 SFRSYM    DATA     BIT       EADC
+      000000A8H   SFRSYM    DATA     BYTE      IE
+      000000E9H   SFRSYM    DATA     BYTE      CL
+      000000C5H   SFRSYM    DATA     BYTE      IAP_CMD
+      000000FAH   SFRSYM    DATA     BYTE      CCAP0H
+      000000FBH   SFRSYM    DATA     BYTE      CCAP1H
+      000000FCH   SFRSYM    DATA     BYTE      CCAP2H
+      000000BDH   SFRSYM    DATA     BYTE      ADC_RES
+      00000090H.4 SFRSYM    DATA     BIT       DQ
+      000000EAH   SFRSYM    DATA     BYTE      CCAP0L
+      000000D8H.6 SFRSYM    DATA     BIT       CR
+      000000F7H   SFRSYM    DATA     BYTE      PWMFDCR
+      000000EBH   SFRSYM    DATA     BYTE      CCAP1L
+      000000DAH   SFRSYM    DATA     BYTE      CCAPM0
+      000000B0H.7 SFRSYM    DATA     BIT       RD
+      000000ECH   SFRSYM    DATA     BYTE      CCAP2L
+      000000DBH   SFRSYM    DATA     BYTE      CCAPM1
+      000000DCH   SFRSYM    DATA     BYTE      CCAPM2
+      000000A8H.4 SFRSYM    DATA     BIT       ES
+      000000B8H.5 SFRSYM    DATA     BIT       PADC
+      000000B8H   SFRSYM    DATA     BYTE      IP
+      00000098H.0 SFRSYM    DATA     BIT       RI
+      000000D0H.7 SFRSYM    DATA     BIT       CY
+      000000B0H.2 SFRSYM    DATA     BIT       INT0
+      000000B0H.3 SFRSYM    DATA     BIT       INT1
+      00000098H.1 SFRSYM    DATA     BIT       TI
+      00000097H   SFRSYM    DATA     BYTE      CLK_DIV
+      000000C3H   SFRSYM    DATA     BYTE      IAP_ADDRH
+      000000B8H.4 SFRSYM    DATA     BIT       PS
+      00000081H   SFRSYM    DATA     BYTE      SP
+      000000D9H   SFRSYM    DATA     BYTE      CMOD
+      000000D8H   SFRSYM    DATA     BYTE      CCON
+      000000C4H   SFRSYM    DATA     BYTE      IAP_ADDRL
+      000000D0H.2 SFRSYM    DATA     BIT       OV
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 20
+
+
+      000000B8H.7 SFRSYM    DATA     BIT       PPCA
+      000000E6H   SFRSYM    DATA     BYTE      CMPCR1
+      000000E7H   SFRSYM    DATA     BYTE      CMPCR2
+      000000B0H.6 SFRSYM    DATA     BIT       WR
+      000000A8H.6 SFRSYM    DATA     BIT       ELVD
+      00000080H.0 SFRSYM    DATA     BIT       P00
+      000000BCH   SFRSYM    DATA     BYTE      ADC_CONTR
+      00000099H   SFRSYM    DATA     BYTE      SBUF
+      00000090H.0 SFRSYM    DATA     BIT       P10
+      00000087H   SFRSYM    DATA     BYTE      PCON
+      00000080H.1 SFRSYM    DATA     BIT       P01
+      000000A0H.0 SFRSYM    DATA     BIT       P20
+      00000090H.1 SFRSYM    DATA     BIT       P11
+      00000080H.2 SFRSYM    DATA     BIT       P02
+      000000B0H.0 SFRSYM    DATA     BIT       P30
+      000000A0H.1 SFRSYM    DATA     BIT       P21
+      00000090H.2 SFRSYM    DATA     BIT       P12
+      00000080H.3 SFRSYM    DATA     BIT       P03
+      000000C0H.0 SFRSYM    DATA     BIT       P40
+      000000B0H.1 SFRSYM    DATA     BIT       P31
+      000000A0H.2 SFRSYM    DATA     BIT       P22
+      00000098H   SFRSYM    DATA     BYTE      SCON
+      00000090H.3 SFRSYM    DATA     BIT       P13
+      00000080H.4 SFRSYM    DATA     BIT       P04
+      000000C8H.0 SFRSYM    DATA     BIT       P50
+      000000C0H.1 SFRSYM    DATA     BIT       P41
+      000000B0H.2 SFRSYM    DATA     BIT       P32
+      000000A0H.3 SFRSYM    DATA     BIT       P23
+      00000090H.4 SFRSYM    DATA     BIT       P14
+      00000089H   SFRSYM    DATA     BYTE      TMOD
+      00000088H   SFRSYM    DATA     BYTE      TCON
+      00000080H.5 SFRSYM    DATA     BIT       P05
+      000000E8H.0 SFRSYM    DATA     BIT       P60
+      000000C8H.1 SFRSYM    DATA     BIT       P51
+      000000C0H.2 SFRSYM    DATA     BIT       P42
+      000000B0H.3 SFRSYM    DATA     BIT       P33
+      000000A0H.4 SFRSYM    DATA     BIT       P24
+      00000090H.5 SFRSYM    DATA     BIT       P15
+      00000080H.6 SFRSYM    DATA     BIT       P06
+      000000F8H.0 SFRSYM    DATA     BIT       P70
+      000000E8H.1 SFRSYM    DATA     BIT       P61
+      000000C8H.2 SFRSYM    DATA     BIT       P52
+      000000C0H.3 SFRSYM    DATA     BIT       P43
+      000000B8H.6 SFRSYM    DATA     BIT       PLVD
+      000000B0H.4 SFRSYM    DATA     BIT       P34
+      000000A0H.5 SFRSYM    DATA     BIT       P25
+      00000090H.6 SFRSYM    DATA     BIT       P16
+      00000080H.7 SFRSYM    DATA     BIT       P07
+      000000F8H.1 SFRSYM    DATA     BIT       P71
+      000000E8H.2 SFRSYM    DATA     BIT       P62
+      000000C8H.3 SFRSYM    DATA     BIT       P53
+      000000C0H.4 SFRSYM    DATA     BIT       P44
+      000000B0H.5 SFRSYM    DATA     BIT       P35
+      000000A0H.6 SFRSYM    DATA     BIT       P26
+      00000090H.7 SFRSYM    DATA     BIT       P17
+      000000F8H.2 SFRSYM    DATA     BIT       P72
+      000000E8H.3 SFRSYM    DATA     BIT       P63
+      000000C8H.4 SFRSYM    DATA     BIT       P54
+      000000C0H.5 SFRSYM    DATA     BIT       P45
+      000000B0H.6 SFRSYM    DATA     BIT       P36
+      000000A0H.7 SFRSYM    DATA     BIT       P27
+      000000F8H.3 SFRSYM    DATA     BIT       P73
+      000000E8H.4 SFRSYM    DATA     BIT       P64
+      000000C8H.5 SFRSYM    DATA     BIT       P55
+      000000C0H.6 SFRSYM    DATA     BIT       P46
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 21
+
+
+      000000B0H.7 SFRSYM    DATA     BIT       P37
+      000000F8H.4 SFRSYM    DATA     BIT       P74
+      000000E8H.5 SFRSYM    DATA     BIT       P65
+      000000C8H.6 SFRSYM    DATA     BIT       P56
+      000000C0H.7 SFRSYM    DATA     BIT       P47
+      000000F8H.5 SFRSYM    DATA     BIT       P75
+      000000E8H.6 SFRSYM    DATA     BIT       P66
+      000000C8H.7 SFRSYM    DATA     BIT       P57
+      000000F8H.6 SFRSYM    DATA     BIT       P76
+      000000E8H.7 SFRSYM    DATA     BIT       P67
+      000000F8H.7 SFRSYM    DATA     BIT       P77
+      000000A1H   SFRSYM    DATA     BYTE      BUS_SPEED
+      00000088H.1 SFRSYM    DATA     BIT       IE0
+      00000088H.3 SFRSYM    DATA     BIT       IE1
+      000000AFH   SFRSYM    DATA     BYTE      IE2
+      000000F0H   SFRSYM    DATA     BYTE      B
+      0000008EH   SFRSYM    DATA     BYTE      AUXR
+      000000C7H   SFRSYM    DATA     BYTE      IAP_CONTR
+      000000F1H   SFRSYM    DATA     BYTE      PWMCFG
+      000000E0H   SFRSYM    DATA     BYTE      ACC
+      000000A8H.1 SFRSYM    DATA     BIT       ET0
+      000000A8H.3 SFRSYM    DATA     BIT       ET1
+      00000088H.5 SFRSYM    DATA     BIT       TF0
+      000000B5H   SFRSYM    DATA     BYTE      IP2
+      00000088H.7 SFRSYM    DATA     BIT       TF1
+      00000098H.2 SFRSYM    DATA     BIT       RB8
+      0000008CH   SFRSYM    DATA     BYTE      TH0
+      000000A8H.0 SFRSYM    DATA     BIT       EX0
+      0000008DH   SFRSYM    DATA     BYTE      TH1
+      00000088H.0 SFRSYM    DATA     BIT       IT0
+      000000D6H   SFRSYM    DATA     BYTE      TH2
+      000000D6H   SFRSYM    DATA     BYTE      T2H
+      000000A8H.2 SFRSYM    DATA     BIT       EX1
+      00000098H.3 SFRSYM    DATA     BIT       TB8
+      00000088H.2 SFRSYM    DATA     BIT       IT1
+      000000D4H   SFRSYM    DATA     BYTE      TH3
+      000000D4H   SFRSYM    DATA     BYTE      T3H
+      000000D0H.0 SFRSYM    DATA     BIT       P
+      000000D2H   SFRSYM    DATA     BYTE      TH4
+      000000D2H   SFRSYM    DATA     BYTE      T4H
+      00000098H.7 SFRSYM    DATA     BIT       SM0
+      0000008AH   SFRSYM    DATA     BYTE      TL0
+      00000098H.6 SFRSYM    DATA     BIT       SM1
+      0000008BH   SFRSYM    DATA     BYTE      TL1
+      000000D7H   SFRSYM    DATA     BYTE      TL2
+      000000D7H   SFRSYM    DATA     BYTE      T2L
+      00000098H.5 SFRSYM    DATA     BIT       SM2
+      000000D5H   SFRSYM    DATA     BYTE      TL3
+      000000D5H   SFRSYM    DATA     BYTE      T3L
+      000000D3H   SFRSYM    DATA     BYTE      TL4
+      000000D3H   SFRSYM    DATA     BYTE      T4L
+      000000B8H.1 SFRSYM    DATA     BIT       PT0
+      000000D0H.3 SFRSYM    DATA     BIT       RS0
+      000000B8H.3 SFRSYM    DATA     BIT       PT1
+      000000D0H.4 SFRSYM    DATA     BIT       RS1
+      000000C2H   SFRSYM    DATA     BYTE      IAP_DATA
+      00000088H.4 SFRSYM    DATA     BIT       TR0
+      00000088H.6 SFRSYM    DATA     BIT       TR1
+      000000C1H   SFRSYM    DATA     BYTE      WDT_CONTR
+      000000B8H.0 SFRSYM    DATA     BIT       PX0
+      000000B8H.2 SFRSYM    DATA     BIT       PX1
+      000000F2H   SFRSYM    DATA     BYTE      PCA_PWM0
+      000000F3H   SFRSYM    DATA     BYTE      PCA_PWM1
+      000000F4H   SFRSYM    DATA     BYTE      PCA_PWM2
+      0000009DH   SFRSYM    DATA     BYTE      P1ASF
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 22
+
+
+      00000083H   SFRSYM    DATA     BYTE      DPH
+      000000D1H   SFRSYM    DATA     BYTE      T3T4M
+      000000D1H   SFRSYM    DATA     BYTE      T4T3M
+      000000BEH   SFRSYM    DATA     BYTE      ADC_RESL
+      00000082H   SFRSYM    DATA     BYTE      DPL
+      000000CDH   SFRSYM    DATA     BYTE      SPSTAT
+      0000009BH   SFRSYM    DATA     BYTE      S2BUF
+      000000ADH   SFRSYM    DATA     BYTE      S3BUF
+      00000098H.4 SFRSYM    DATA     BIT       REN
+      00000085H   SFRSYM    DATA     BYTE      S4BUF
+      0000009AH   SFRSYM    DATA     BYTE      S2CON
+      000000ACH   SFRSYM    DATA     BYTE      S3CON
+      00000084H   SFRSYM    DATA     BYTE      S4CON
+      000000B9H   SFRSYM    DATA     BYTE      SADEN
+      000000B0H.0 SFRSYM    DATA     BIT       RXD
+      000000A9H   SFRSYM    DATA     BYTE      SADDR
+      000000B0H.1 SFRSYM    DATA     BIT       TXD
+      000000C6H   SFRSYM    DATA     BYTE      IAP_TRIG
+      000000A2H   SFRSYM    DATA     BYTE      AUXR1
+      000000D0H.5 SFRSYM    DATA     BIT       F0
+      000000D0H.1 SFRSYM    DATA     BIT       F1
+      0000008FH   SFRSYM    DATA     BYTE      INT_CLKO
+      000000D0H   SFRSYM    DATA     BYTE      PSW
+      000000D8H.0 SFRSYM    DATA     BIT       CCF0
+      000000D8H.1 SFRSYM    DATA     BIT       CCF1
+      000000CFH   SFRSYM    DATA     BYTE      SPDAT
+      00000094H   SFRSYM    DATA     BYTE      P0M0
+
+      010006D0H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010006D4H   BLOCK     CODE     ---       LVL=0
+      00000006H   SYMBOL    DATA     WORD      t
+      00000005H   SYMBOL    DATA     BYTE      i
+      010006D4H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000005H   SYMBOL    DATA     BYTE      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      010006D4H   LINE      CODE     ---       #13
+      010006D4H   LINE      CODE     ---       #14
+      010006D4H   LINE      CODE     ---       #16
+      010006DEH   LINE      CODE     ---       #17
+      010006E9H   LINE      CODE     ---       #18
+      010006E9H   LINE      CODE     ---       #19
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010006B2H   BLOCK     CODE     ---       LVL=0
+      00000001H   SYMBOL    DATA     BYTE      dat
+      010006B4H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000003H   SYMBOL    DATA     BYTE      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      010006B2H   LINE      CODE     ---       #22
+      010006B4H   LINE      CODE     ---       #23
+      010006B4H   LINE      CODE     ---       #25
+      010006B6H   LINE      CODE     ---       #26
+      010006B6H   LINE      CODE     ---       #27
+      010006B8H   LINE      CODE     ---       #28
+      010006BCH   LINE      CODE     ---       #29
+      010006BFH   LINE      CODE     ---       #30
+      010006C1H   LINE      CODE     ---       #31
+      010006C5H   LINE      CODE     ---       #32
+      010006C9H   LINE      CODE     ---       #33
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010006EAH   BLOCK     CODE     ---       LVL=0
+      010006EAH   BLOCK     CODE     NEAR LAB  LVL=1
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 23
+
+
+      00000003H   SYMBOL    DATA     BYTE      i
+      00000004H   SYMBOL    DATA     BYTE      dat
+      ---         BLOCKEND  ---      ---       LVL=1
+      010006EAH   LINE      CODE     ---       #37
+      010006EAH   LINE      CODE     ---       #38
+      010006EAH   LINE      CODE     ---       #42
+      010006ECH   LINE      CODE     ---       #43
+      010006ECH   LINE      CODE     ---       #44
+      010006EEH   LINE      CODE     ---       #45
+      010006F2H   LINE      CODE     ---       #46
+      010006F4H   LINE      CODE     ---       #47
+      010006F7H   LINE      CODE     ---       #48
+      010006F7H   LINE      CODE     ---       #49
+      010006FAH   LINE      CODE     ---       #50
+      010006FAH   LINE      CODE     ---       #51
+      010006FDH   LINE      CODE     ---       #52
+      01000701H   LINE      CODE     ---       #53
+      01000703H   LINE      CODE     ---       #54
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100064DH   BLOCK     CODE     ---       LVL=0
+      0100064DH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000020H.0 SYMBOL    BIT      BIT       initflag
+      ---         BLOCKEND  ---      ---       LVL=1
+      0100064DH   LINE      CODE     ---       #57
+      0100064DH   LINE      CODE     ---       #58
+      0100064DH   LINE      CODE     ---       #59
+      0100064FH   LINE      CODE     ---       #61
+      01000651H   LINE      CODE     ---       #62
+      01000658H   LINE      CODE     ---       #63
+      0100065AH   LINE      CODE     ---       #64
+      01000661H   LINE      CODE     ---       #65
+      01000663H   LINE      CODE     ---       #66
+      0100066AH   LINE      CODE     ---       #67
+      0100066EH   LINE      CODE     ---       #68
+      01000671H   LINE      CODE     ---       #70
+      01000673H   LINE      CODE     ---       #71
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       DS1302
+      010005C5H   PUBLIC    CODE     ---       _Read_Ds1302_Byte
+      01000704H   PUBLIC    CODE     ---       _Write_Ds1302_Byte
+      01000718H   PUBLIC    CODE     ---       _Write_Ds1302
+      000000D8H.2 SFRSYM    DATA     BIT       CCF2
+      00000093H   SFRSYM    DATA     BYTE      P0M1
+      00000092H   SFRSYM    DATA     BYTE      P1M0
+      00000096H   SFRSYM    DATA     BYTE      P2M0
+      00000091H   SFRSYM    DATA     BYTE      P1M1
+      00000080H   SFRSYM    DATA     BYTE      P0
+      000000B2H   SFRSYM    DATA     BYTE      P3M0
+      00000095H   SFRSYM    DATA     BYTE      P2M1
+      00000090H   SFRSYM    DATA     BYTE      P1
+      000000B4H   SFRSYM    DATA     BYTE      P4M0
+      000000B1H   SFRSYM    DATA     BYTE      P3M1
+      000000A0H   SFRSYM    DATA     BYTE      P2
+      000000CAH   SFRSYM    DATA     BYTE      P5M0
+      000000B3H   SFRSYM    DATA     BYTE      P4M1
+      000000B0H   SFRSYM    DATA     BYTE      P3
+      000000ABH   SFRSYM    DATA     BYTE      WKTCH
+      000000D0H.6 SFRSYM    DATA     BIT       AC
+      000000CCH   SFRSYM    DATA     BYTE      P6M0
+      000000C9H   SFRSYM    DATA     BYTE      P5M1
+      000000C0H   SFRSYM    DATA     BYTE      P4
+      000000B0H.4 SFRSYM    DATA     BIT       T0
+      000000F6H   SFRSYM    DATA     BYTE      PWMIF
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 24
+
+
+      000000E2H   SFRSYM    DATA     BYTE      P7M0
+      000000CBH   SFRSYM    DATA     BYTE      P6M1
+      000000C8H   SFRSYM    DATA     BYTE      P5
+      000000B0H.5 SFRSYM    DATA     BIT       T1
+      000000E8H   SFRSYM    DATA     BYTE      P6
+      000000E1H   SFRSYM    DATA     BYTE      P7M1
+      000000A8H.7 SFRSYM    DATA     BIT       EA
+      000000F8H   SFRSYM    DATA     BYTE      P7
+      000000AAH   SFRSYM    DATA     BYTE      WKTCL
+      000000CEH   SFRSYM    DATA     BYTE      SPCTL
+      000000D8H.7 SFRSYM    DATA     BIT       CF
+      000000F9H   SFRSYM    DATA     BYTE      CH
+      000000F5H   SFRSYM    DATA     BYTE      PWMCR
+      000000A2H   SFRSYM    DATA     BYTE      P_SW1
+      000000BAH   SFRSYM    DATA     BYTE      P_SW2
+      000000A8H.5 SFRSYM    DATA     BIT       EADC
+      000000A8H   SFRSYM    DATA     BYTE      IE
+      000000E9H   SFRSYM    DATA     BYTE      CL
+      000000C5H   SFRSYM    DATA     BYTE      IAP_CMD
+      000000FAH   SFRSYM    DATA     BYTE      CCAP0H
+      000000FBH   SFRSYM    DATA     BYTE      CCAP1H
+      000000FCH   SFRSYM    DATA     BYTE      CCAP2H
+      000000BDH   SFRSYM    DATA     BYTE      ADC_RES
+      000000EAH   SFRSYM    DATA     BYTE      CCAP0L
+      000000D8H.6 SFRSYM    DATA     BIT       CR
+      000000F7H   SFRSYM    DATA     BYTE      PWMFDCR
+      000000EBH   SFRSYM    DATA     BYTE      CCAP1L
+      000000DAH   SFRSYM    DATA     BYTE      CCAPM0
+      000000B0H.7 SFRSYM    DATA     BIT       RD
+      000000ECH   SFRSYM    DATA     BYTE      CCAP2L
+      000000DBH   SFRSYM    DATA     BYTE      CCAPM1
+      000000DCH   SFRSYM    DATA     BYTE      CCAPM2
+      000000A8H.4 SFRSYM    DATA     BIT       ES
+      000000B8H.5 SFRSYM    DATA     BIT       PADC
+      000000B8H   SFRSYM    DATA     BYTE      IP
+      00000098H.0 SFRSYM    DATA     BIT       RI
+      000000D0H.7 SFRSYM    DATA     BIT       CY
+      000000B0H.2 SFRSYM    DATA     BIT       INT0
+      000000B0H.3 SFRSYM    DATA     BIT       INT1
+      00000098H.1 SFRSYM    DATA     BIT       TI
+      00000097H   SFRSYM    DATA     BYTE      CLK_DIV
+      000000C3H   SFRSYM    DATA     BYTE      IAP_ADDRH
+      000000B8H.4 SFRSYM    DATA     BIT       PS
+      00000081H   SFRSYM    DATA     BYTE      SP
+      000000D9H   SFRSYM    DATA     BYTE      CMOD
+      000000D8H   SFRSYM    DATA     BYTE      CCON
+      000000C4H   SFRSYM    DATA     BYTE      IAP_ADDRL
+      000000D0H.2 SFRSYM    DATA     BIT       OV
+      000000B8H.7 SFRSYM    DATA     BIT       PPCA
+      000000E6H   SFRSYM    DATA     BYTE      CMPCR1
+      000000E7H   SFRSYM    DATA     BYTE      CMPCR2
+      000000B0H.6 SFRSYM    DATA     BIT       WR
+      000000A8H.6 SFRSYM    DATA     BIT       ELVD
+      00000080H.0 SFRSYM    DATA     BIT       P00
+      000000BCH   SFRSYM    DATA     BYTE      ADC_CONTR
+      00000099H   SFRSYM    DATA     BYTE      SBUF
+      00000090H.0 SFRSYM    DATA     BIT       P10
+      00000087H   SFRSYM    DATA     BYTE      PCON
+      00000080H.1 SFRSYM    DATA     BIT       P01
+      000000A0H.0 SFRSYM    DATA     BIT       P20
+      00000090H.1 SFRSYM    DATA     BIT       P11
+      00000080H.2 SFRSYM    DATA     BIT       P02
+      000000B0H.0 SFRSYM    DATA     BIT       P30
+      000000A0H.1 SFRSYM    DATA     BIT       P21
+      00000090H.2 SFRSYM    DATA     BIT       P12
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 25
+
+
+      00000080H.3 SFRSYM    DATA     BIT       P03
+      000000C0H.0 SFRSYM    DATA     BIT       P40
+      000000B0H.1 SFRSYM    DATA     BIT       P31
+      000000A0H.2 SFRSYM    DATA     BIT       P22
+      00000098H   SFRSYM    DATA     BYTE      SCON
+      00000090H.3 SFRSYM    DATA     BIT       P13
+      00000080H.4 SFRSYM    DATA     BIT       P04
+      000000C8H.0 SFRSYM    DATA     BIT       P50
+      000000C0H.1 SFRSYM    DATA     BIT       P41
+      000000B0H.2 SFRSYM    DATA     BIT       P32
+      000000A0H.3 SFRSYM    DATA     BIT       P23
+      00000090H.4 SFRSYM    DATA     BIT       P14
+      00000089H   SFRSYM    DATA     BYTE      TMOD
+      00000088H   SFRSYM    DATA     BYTE      TCON
+      00000080H.5 SFRSYM    DATA     BIT       P05
+      000000E8H.0 SFRSYM    DATA     BIT       P60
+      000000C8H.1 SFRSYM    DATA     BIT       P51
+      000000C0H.2 SFRSYM    DATA     BIT       P42
+      000000B0H.3 SFRSYM    DATA     BIT       P33
+      000000A0H.4 SFRSYM    DATA     BIT       P24
+      00000090H.5 SFRSYM    DATA     BIT       P15
+      00000080H.6 SFRSYM    DATA     BIT       P06
+      000000F8H.0 SFRSYM    DATA     BIT       P70
+      000000E8H.1 SFRSYM    DATA     BIT       P61
+      000000C8H.2 SFRSYM    DATA     BIT       P52
+      000000C0H.3 SFRSYM    DATA     BIT       P43
+      000000B8H.6 SFRSYM    DATA     BIT       PLVD
+      000000B0H.4 SFRSYM    DATA     BIT       P34
+      000000A0H.5 SFRSYM    DATA     BIT       P25
+      00000090H.6 SFRSYM    DATA     BIT       P16
+      00000080H.7 SFRSYM    DATA     BIT       P07
+      000000F8H.1 SFRSYM    DATA     BIT       P71
+      000000E8H.2 SFRSYM    DATA     BIT       P62
+      000000C8H.3 SFRSYM    DATA     BIT       P53
+      000000C0H.4 SFRSYM    DATA     BIT       P44
+      000000B0H.5 SFRSYM    DATA     BIT       P35
+      000000A0H.6 SFRSYM    DATA     BIT       P26
+      00000090H.7 SFRSYM    DATA     BIT       P17
+      000000F8H.2 SFRSYM    DATA     BIT       P72
+      000000E8H.3 SFRSYM    DATA     BIT       P63
+      000000C8H.4 SFRSYM    DATA     BIT       P54
+      000000C0H.5 SFRSYM    DATA     BIT       P45
+      000000B0H.6 SFRSYM    DATA     BIT       P36
+      000000A0H.7 SFRSYM    DATA     BIT       P27
+      000000F8H.3 SFRSYM    DATA     BIT       P73
+      000000E8H.4 SFRSYM    DATA     BIT       P64
+      000000C8H.5 SFRSYM    DATA     BIT       P55
+      000000C0H.6 SFRSYM    DATA     BIT       P46
+      000000B0H.7 SFRSYM    DATA     BIT       P37
+      000000F8H.4 SFRSYM    DATA     BIT       P74
+      000000E8H.5 SFRSYM    DATA     BIT       P65
+      000000C8H.6 SFRSYM    DATA     BIT       P56
+      000000C0H.7 SFRSYM    DATA     BIT       P47
+      000000F8H.5 SFRSYM    DATA     BIT       P75
+      000000E8H.6 SFRSYM    DATA     BIT       P66
+      000000C8H.7 SFRSYM    DATA     BIT       P57
+      000000F8H.6 SFRSYM    DATA     BIT       P76
+      000000E8H.7 SFRSYM    DATA     BIT       P67
+      000000F8H.7 SFRSYM    DATA     BIT       P77
+      000000A1H   SFRSYM    DATA     BYTE      BUS_SPEED
+      00000088H.1 SFRSYM    DATA     BIT       IE0
+      00000088H.3 SFRSYM    DATA     BIT       IE1
+      000000AFH   SFRSYM    DATA     BYTE      IE2
+      000000F0H   SFRSYM    DATA     BYTE      B
+      0000008EH   SFRSYM    DATA     BYTE      AUXR
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 26
+
+
+      000000C7H   SFRSYM    DATA     BYTE      IAP_CONTR
+      000000F1H   SFRSYM    DATA     BYTE      PWMCFG
+      000000E0H   SFRSYM    DATA     BYTE      ACC
+      000000A8H.1 SFRSYM    DATA     BIT       ET0
+      000000A8H.3 SFRSYM    DATA     BIT       ET1
+      00000088H.5 SFRSYM    DATA     BIT       TF0
+      000000B5H   SFRSYM    DATA     BYTE      IP2
+      00000088H.7 SFRSYM    DATA     BIT       TF1
+      00000098H.2 SFRSYM    DATA     BIT       RB8
+      0000008CH   SFRSYM    DATA     BYTE      TH0
+      000000A8H.0 SFRSYM    DATA     BIT       EX0
+      0000008DH   SFRSYM    DATA     BYTE      TH1
+      00000088H.0 SFRSYM    DATA     BIT       IT0
+      000000D6H   SFRSYM    DATA     BYTE      TH2
+      000000D6H   SFRSYM    DATA     BYTE      T2H
+      000000A8H.2 SFRSYM    DATA     BIT       EX1
+      00000098H.3 SFRSYM    DATA     BIT       TB8
+      00000088H.2 SFRSYM    DATA     BIT       IT1
+      000000D4H   SFRSYM    DATA     BYTE      TH3
+      000000D4H   SFRSYM    DATA     BYTE      T3H
+      000000D0H.0 SFRSYM    DATA     BIT       P
+      000000D2H   SFRSYM    DATA     BYTE      TH4
+      000000D2H   SFRSYM    DATA     BYTE      T4H
+      00000098H.7 SFRSYM    DATA     BIT       SM0
+      0000008AH   SFRSYM    DATA     BYTE      TL0
+      00000098H.6 SFRSYM    DATA     BIT       SM1
+      0000008BH   SFRSYM    DATA     BYTE      TL1
+      000000D7H   SFRSYM    DATA     BYTE      TL2
+      000000D7H   SFRSYM    DATA     BYTE      T2L
+      00000098H.5 SFRSYM    DATA     BIT       SM2
+      000000D5H   SFRSYM    DATA     BYTE      TL3
+      000000D5H   SFRSYM    DATA     BYTE      T3L
+      000000D3H   SFRSYM    DATA     BYTE      TL4
+      000000D3H   SFRSYM    DATA     BYTE      T4L
+      000000B8H.1 SFRSYM    DATA     BIT       PT0
+      000000D0H.3 SFRSYM    DATA     BIT       RS0
+      000000B8H.3 SFRSYM    DATA     BIT       PT1
+      000000D0H.4 SFRSYM    DATA     BIT       RS1
+      000000C2H   SFRSYM    DATA     BYTE      IAP_DATA
+      00000088H.4 SFRSYM    DATA     BIT       TR0
+      00000088H.6 SFRSYM    DATA     BIT       TR1
+      000000A0H.3 SFRSYM    DATA     BIT       SDA
+      000000C1H   SFRSYM    DATA     BYTE      WDT_CONTR
+      000000B8H.0 SFRSYM    DATA     BIT       PX0
+      000000B8H.2 SFRSYM    DATA     BIT       PX1
+      000000F2H   SFRSYM    DATA     BYTE      PCA_PWM0
+      000000F3H   SFRSYM    DATA     BYTE      PCA_PWM1
+      000000F4H   SFRSYM    DATA     BYTE      PCA_PWM2
+      0000009DH   SFRSYM    DATA     BYTE      P1ASF
+      00000083H   SFRSYM    DATA     BYTE      DPH
+      000000D1H   SFRSYM    DATA     BYTE      T3T4M
+      000000D1H   SFRSYM    DATA     BYTE      T4T3M
+      000000BEH   SFRSYM    DATA     BYTE      ADC_RESL
+      00000082H   SFRSYM    DATA     BYTE      DPL
+      00000090H.7 SFRSYM    DATA     BIT       SCK
+      000000CDH   SFRSYM    DATA     BYTE      SPSTAT
+      0000009BH   SFRSYM    DATA     BYTE      S2BUF
+      000000ADH   SFRSYM    DATA     BYTE      S3BUF
+      00000098H.4 SFRSYM    DATA     BIT       REN
+      00000085H   SFRSYM    DATA     BYTE      S4BUF
+      0000009AH   SFRSYM    DATA     BYTE      S2CON
+      000000ACH   SFRSYM    DATA     BYTE      S3CON
+      00000084H   SFRSYM    DATA     BYTE      S4CON
+      000000B9H   SFRSYM    DATA     BYTE      SADEN
+      000000B0H.0 SFRSYM    DATA     BIT       RXD
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 27
+
+
+      000000A9H   SFRSYM    DATA     BYTE      SADDR
+      000000B0H.1 SFRSYM    DATA     BIT       TXD
+      000000C6H   SFRSYM    DATA     BYTE      IAP_TRIG
+      000000A2H   SFRSYM    DATA     BYTE      AUXR1
+      000000D0H.5 SFRSYM    DATA     BIT       F0
+      000000D0H.1 SFRSYM    DATA     BIT       F1
+      0000008FH   SFRSYM    DATA     BYTE      INT_CLKO
+      00000090H.3 SFRSYM    DATA     BIT       RST
+      000000D0H   SFRSYM    DATA     BYTE      PSW
+      000000D8H.0 SFRSYM    DATA     BIT       CCF0
+      000000D8H.1 SFRSYM    DATA     BIT       CCF1
+      000000CFH   SFRSYM    DATA     BYTE      SPDAT
+      00000094H   SFRSYM    DATA     BYTE      P0M0
+
+      01000718H   BLOCK     CODE     ---       LVL=0
+      00000007H   SYMBOL    DATA     BYTE      temp
+      01000718H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000006H   SYMBOL    DATA     BYTE      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      01000718H   LINE      CODE     ---       #14
+      01000718H   LINE      CODE     ---       #15
+      01000718H   LINE      CODE     ---       #17
+      0100071AH   LINE      CODE     ---       #18
+      0100071AH   LINE      CODE     ---       #19
+      0100071CH   LINE      CODE     ---       #20
+      01000720H   LINE      CODE     ---       #21
+      01000724H   LINE      CODE     ---       #22
+      01000726H   LINE      CODE     ---       #23
+      0100072AH   LINE      CODE     ---       #24
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000704H   BLOCK     CODE     ---       LVL=0
+      00000007H   SYMBOL    DATA     BYTE      address
+      00000005H   SYMBOL    DATA     BYTE      dat
+      01000704H   LINE      CODE     ---       #27
+      01000704H   LINE      CODE     ---       #28
+      01000704H   LINE      CODE     ---       #29
+      01000707H   LINE      CODE     ---       #30
+      0100070AH   LINE      CODE     ---       #31
+      0100070DH   LINE      CODE     ---       #32
+      01000710H   LINE      CODE     ---       #33
+      01000715H   LINE      CODE     ---       #34
+      01000717H   LINE      CODE     ---       #35
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010005C5H   BLOCK     CODE     ---       LVL=0
+      00000007H   SYMBOL    DATA     BYTE      address
+      010005C5H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     BYTE      i
+      00000005H   SYMBOL    DATA     BYTE      temp
+      ---         BLOCKEND  ---      ---       LVL=1
+      010005C5H   LINE      CODE     ---       #38
+      010005C5H   LINE      CODE     ---       #39
+      010005C5H   LINE      CODE     ---       #40
+      010005C7H   LINE      CODE     ---       #41
+      010005CAH   LINE      CODE     ---       #42
+      010005CDH   LINE      CODE     ---       #43
+      010005D0H   LINE      CODE     ---       #44
+      010005D3H   LINE      CODE     ---       #45
+      010005D5H   LINE      CODE     ---       #46
+      010005D5H   LINE      CODE     ---       #47
+      010005D7H   LINE      CODE     ---       #48
+      010005DBH   LINE      CODE     ---       #49
+      010005DEH   LINE      CODE     ---       #50
+      010005E1H   LINE      CODE     ---       #51
+LX51 LINKER/LOCATER V4.66.100.0                                                       11/12/2024  16:30:50  PAGE 28
+
+
+      010005E3H   LINE      CODE     ---       #52
+      010005E7H   LINE      CODE     ---       #53
+      010005EAH   LINE      CODE     ---       #54
+      010005EDH   LINE      CODE     ---       #55
+      010005F0H   LINE      CODE     ---       #56
+      010005F3H   LINE      CODE     ---       #57
+      010005F6H   LINE      CODE     ---       #58
+      010005F8H   LINE      CODE     ---       #59
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C?LMUL
+      0100000EH   PUBLIC    CODE     ---       ?C?LMUL
+
+      ---         MODULE    ---      ---       ?C?ULDIV
+      01000099H   PUBLIC    CODE     ---       ?C?ULDIV
+
+      ---         MODULE    ---      ---       ?C?LSHL
+      0100012BH   PUBLIC    CODE     ---       ?C?LSHL
+
+      ---         MODULE    ---      ---       ?C?LLDIDATA
+      0100013EH   PUBLIC    CODE     ---       ?C?LLDIDATA
+
+      ---         MODULE    ---      ---       ?C?LSTIDATA
+      0100014AH   PUBLIC    CODE     ---       ?C?LSTIDATA
+
+      ---         MODULE    ---      ---       ?C_INIT
+      01000358H   PUBLIC    CODE     ---       ?C_START
+
+Program Size: data=78.1 xdata=0 const=46 code=1869
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
